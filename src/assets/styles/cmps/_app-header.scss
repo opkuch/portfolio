@@ -5,7 +5,7 @@
   background-color: rgba(53, 47, 47, 0.051);
   min-height: 150px;
   box-shadow: 0 5px 50px 10px rgba(255, 255, 255, 0.237);
-  z-index: 2;
+  z-index: 10;
 
   .header-logo {
     font-family: 'Satisfy', cursive;
@@ -16,7 +16,7 @@
       font-weight: 800;
     }
     .slash {
-      color: #9631b5;
+      color: #4b185b;
     }
   }
   nav {

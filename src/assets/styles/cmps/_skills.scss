@@ -1,0 +1,19 @@
+.skills-container {
+    color: rgba(33, 28, 28, 0.089);
+    background-color: rgba(21, 37, 53, 0.025);
+    padding: 2rem;
+    margin-block: 1rem;
+    border-radius: 15%;
+    .skills-body {
+        p {
+            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(5, 75px);
+            gap: 15px;
+            @media(max-width: 360px) {
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+    }
+}

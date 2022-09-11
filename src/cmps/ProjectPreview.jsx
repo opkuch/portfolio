@@ -7,7 +7,7 @@ export function ProjectPreview({project}) {
         <span className='small-title'>{project.name}</span>
         <span className='description'>{project.description}</span>
         <img onClick={() => window.open(project.url, '_blank')} src={project.thumbnail}/>
-        <span className='skills'>[{project.skills.map(skill => <span className='small-skill'>{skill}</span>)}]</span>
+        <span className='skills'>[{project.skills.map(skill => <span key={skill} className='small-skill'>{skill}</span>)}]</span>
     </div>
   )
 }

@@ -1,7 +1,35 @@
-// $colors: #d86bfdc0, #a256ffcf, #8855ffb6, #a556f9d5, #7e61feda;
 .about-container {
     height: 100vh;
-    // background-color: rgba(21, 37, 53, 0.01);
+    background-color: rgba(21, 37, 53, 0.01);
     padding: 2rem;
-    border-radius: 40%;
+    border-radius: 15%;
+    .about-body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        .about-info {
+            max-width: 500px;
+            font-size: 1.5rem;
+            line-height: 35px;
+            font-family: 'Nanum Gothic';
+        }
+
+        .about-img {
+            height: 250px;
+            width: 250px;
+            border-radius: 50%;
+        }
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        font-size: 1.5rem;
+        div {
+            gap: 20px;
+        }
+    }
 }

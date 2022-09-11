@@ -18,7 +18,7 @@ export function Hero() {
         <span >Hey, I'm Nadav</span>
       </section>
       <section ref={bodyRef} className='flex column hero-body'>
-        <div>I am looking for my next challenge as a Fullstack Developer</div>
+        <div>I am looking for my next challenge as a Web Developer</div>
         <div>Checkout more of my work below!</div>
       </section>
     </div>
