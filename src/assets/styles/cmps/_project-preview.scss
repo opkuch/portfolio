@@ -7,10 +7,15 @@
         filter: blur(1.5px);
         cursor: pointer;
         transition: all .3s ease;
+        margin-block-start: 1rem;
         &:hover {
             filter: blur(0);
             transform: scale(1.2); 
             z-index: 2;
         }
+    }
+
+    .description {
+        color: rgb(36, 32, 32);
     }
 }

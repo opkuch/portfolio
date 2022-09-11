@@ -18,9 +18,33 @@
     {
         "id": "p102",
         "name": "bitpocket",
-        "description": "Bitcoin - money managing app",
+        "description": "Bitcoin-app - money managing app",
         "skills": ["react", "redux", "scss"],
         "thumbnail": "https://gcdnb.pbrd.co/images/2e3rkyZsBc5D.png?o=1",
         "url": "https://opkuch.github.io/bitcoin-app/#/"
+    },
+    {
+        "id": "p103",
+        "name": "minesweeper",
+        "description": "The ol' familiar MineSweeper game - Vanilla JS Project ",
+        "skills": ["html5", "css", "js"],
+        "thumbnail": "https://gcdnb.pbrd.co/images/rEL88sQptPe1.png?o=1",
+        "url": "https://opkuch.github.io/mineSweeper/"
+    },
+    {
+        "id": "p104",
+        "name": "memegen",
+        "description": "Meme generator - Vanilla JS Project ",
+        "skills": ["html5", "css", "js"],
+        "thumbnail": "https://gcdnb.pbrd.co/images/iCsANHuhgaZ7.png?o=1",
+        "url": "https://opkuch.github.io/meme-generator/"
+    },
+    {
+        "id": "p105",
+        "name": "painter",
+        "description": "Painter - Painting on canvas ",
+        "skills": ["html5", "css", "js"],
+        "thumbnail": "https://gcdnb.pbrd.co/images/3get9XuBALNs.png?o=1",
+        "url": "https://opkuch.github.io/painter/"
     }
 ]

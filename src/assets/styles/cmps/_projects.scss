@@ -2,11 +2,27 @@
 .projects-container {
     min-height: 100vh;
     color: rgba(33, 28, 28, 0.089);
-    background-color: rgba(21, 37, 53, 0.01);
+    background-color: rgba(21, 37, 53, 0.025);
     padding: 2rem;
     margin-block: 1rem;
     border-radius: 40%;
 
     .projects-body {
+    }
+    .skills {
+        padding: 1rem;
+        color: rgb(25, 23, 28);
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        .small-skill {
+            text-transform: uppercase;
+            color: rgb(39, 34, 34);
+            font-family: 'Nanum Gothic';
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            font-size: 0.7rem;
+        }
+
     }
 }

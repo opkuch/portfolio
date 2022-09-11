@@ -39,13 +39,13 @@ export function AppParticles() {
         },
         particles: {
             color: {
-                value: "#000",
+                value: "#2e0f37ca",
             },
             links: {
-                color: "#000",
+                color: "#2e0f37ca",
                 distance: 150,
                 enable: true,
-                opacity: 0.2,
+                opacity: 0.25,
                 width: 1,
             },
             move: {
@@ -63,7 +63,7 @@ export function AppParticles() {
                     enable: true,
                     area: 800,
                 },
-                value: 200,
+                value: 150,
             },
             opacity: {
                 value: 0.1,
