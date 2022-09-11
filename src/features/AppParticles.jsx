@@ -33,7 +33,7 @@ export function AppParticles() {
                 },
                 repulse: {
                     distance: 85,
-                    duration: 0.8,
+                    duration: 0.2,
                 },
             },
         },

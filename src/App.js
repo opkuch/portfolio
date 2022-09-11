@@ -5,7 +5,6 @@ import { Projects } from './cmps/Projects';
 import { About } from './cmps/About';
 import { Hero } from './cmps/Hero';
 import { AppParticles } from './features/AppParticles'
-import { GoToTop } from './features/GoToTop';
 import { Skills } from './cmps/Skills';
 
 function App() {
@@ -17,8 +16,7 @@ function App() {
       <Projects />
       <Skills />
       <About />
-      <GoToTop />
-    </>
+\    </>
   );
 }
 

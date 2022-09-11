@@ -1,0 +1,26 @@
+[
+    {
+        "id": "p100",
+        "name": "donatello",
+        "description": "Task management app - Trello inspired clone",
+        "skills": ["vue", "vuex", "scss", "mongodb", "express.js"],
+        "thumbnail": "https://gcdnb.pbrd.co/images/S91KWZNuZ98T.png?o=1",
+        "url": "https://donate11o-app.herokuapp.com/#/"
+    },
+    {
+        "id": "p101",
+        "name": "missbooks",
+        "description": "Virtual library, finding and reveiwing books",
+        "skills": ["angular", "rxjs", "scss", "firebase"],
+        "thumbnail": "https://gcdnb.pbrd.co/images/Ulv43WloRX5t.png?o=1",
+        "url": "https://opkuch.github.io/missBooks-ghPage/#/home"
+    },
+    {
+        "id": "p102",
+        "name": "bitpocket",
+        "description": "Bitcoin - money managing app",
+        "skills": ["react", "redux", "scss"],
+        "thumbnail": "https://gcdnb.pbrd.co/images/2e3rkyZsBc5D.png?o=1",
+        "url": "https://opkuch.github.io/bitcoin-app/#/"
+    }
+]

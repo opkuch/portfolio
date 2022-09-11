@@ -5,6 +5,7 @@
     margin-block: 1rem;
     padding: 1rem;
     gap: 20px;
+    overflow: hidden;
     .hero-title {
         transform: translateX(-100%);
         transition: opacity 1s linear, transform 1s ease-in-out;

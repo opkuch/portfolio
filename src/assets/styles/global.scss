@@ -16,6 +16,7 @@
 @import "cmps/projects";
 @import "cmps/about";
 @import "cmps/shooting-stars";
+@import "cmps/project-preview";
 
 // Pages
 
@@ -51,7 +52,7 @@
     stroke: white;
     stroke-dasharray: $stroke-step $stroke-step * ($max - 1);
     stroke-width: 3px;
-    animation: stroke-offset 9s 1s infinite forwards;
+    animation: stroke-offset 9s 1s 1 forwards;
     @for $item from 1 through $max {
       $stroke-color: nth($colors, $item);
       

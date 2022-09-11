@@ -5,7 +5,7 @@ export function AppHeader() {
   return (
     <header className="flex column space-around align-center header-container">
       <section className="header-logo">
-        <span>{`<nDev />`}</span>
+        <span onClick={() => window.scrollTo({top: 0, left: 0, behavior: 'smooth'})}>{`<nDev />`}</span>
       </section>
       <nav className='flex'>
         <Link to="projects" spy={true} smooth={true} offset={-125} duration={500} className="nav-link">

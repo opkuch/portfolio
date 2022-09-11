@@ -1,7 +1,13 @@
-import React from 'react'
-import ProjectsTitle from '../assets/svg/projects.svg'
+import React, {useState, useEffect} from 'react'
+import projectsDB from '../db/projectsDB.json'
+import { ProjectPreview } from './ProjectPreview'
+
 export function Projects() {
-  console.log(ProjectsTitle)
+  const [projects, setProjects] = useState(projectsDB)
+
+  useEffect(() => {
+    console.log(projects)
+  })
   return (
     <div id="projects" className="container projects-container">
       <section className="projects-header">
@@ -21,9 +27,8 @@ export function Projects() {
           </g>
         </svg>
       </section>
-      <section className='projects-body flex column align-center'>
-        <div>hi</div>
-        <div>bye</div>
+      <section className='projects-body simple-cards-grid'>
+        {projects.map(project => <ProjectPreview key={project.id} project={project}/>)}
       </section>
     </div>
   )
