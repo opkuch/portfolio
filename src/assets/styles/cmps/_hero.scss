@@ -1,0 +1,29 @@
+.hero-container {
+    font-family: 'Staatliches', sans-serif;
+    min-height: 50vh;
+    color: black;
+    margin-block: 1rem;
+    padding: 1rem;
+    gap: 20px;
+    .hero-title {
+        transform: translateX(-100%);
+        transition: opacity 1s linear, transform 1s ease-in-out;
+        font-size: 3.5rem;
+        opacity: 0;
+        &.init {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    .hero-body {
+        font-size: 2rem;
+        text-align: center;
+        gap: 5px;
+        opacity: 0;
+        transition: opacity 1s linear;
+        &.init {
+            opacity: 1;
+        }
+    }
+}

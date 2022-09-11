@@ -1,0 +1,56 @@
+.header-container {
+  position: sticky;
+  top: 0;
+  color: rgb(38, 33, 33);
+  background-color: rgba(53, 47, 47, 0.051);
+  min-height: 150px;
+  box-shadow: 0 5px 50px 10px rgba(255, 255, 255, 0.237);
+  z-index: 2;
+
+  .header-logo {
+    font-family: 'Satisfy', cursive;
+    font-size: 3rem;
+    user-select: none;
+    cursor: pointer;
+    span {
+      font-weight: 800;
+    }
+  }
+  nav {
+    gap: 20px;
+    align-items: center;
+    font-family: 'Cookie', cursive;
+    user-select: none;
+    .nav-link {
+      transition: 0.3s all;
+      position: relative;
+      padding-block-end: 3px;
+      font-size: 2rem;
+      @media (max-width: 600px) {
+        padding-block-end: 0;
+        margin-block: 1rem;
+      }
+      &.active {
+        box-shadow: 0 3px #9631b5;
+        color: #6c2183;
+      }
+      &:not(.active)::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        right: 50%;
+        display: block;
+        min-height: 3px;
+        width: 0;
+        background: #9631b5;
+        transition: width 0.5s ease 0s, left 0.5s ease 0s;
+        opacity: 0;
+      }
+      &:hover::after {
+        width: 100%;
+        left: 0;
+        opacity: 1;
+      }
+    }
+  }
+}
