@@ -1,28 +1,48 @@
 .about-container {
-    height: 100vh;
     background-color: rgba(21, 37, 53, 0.009);
     padding: 2rem;
     border-radius: 15%;
+    min-height: 80vh;
     .about-body {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 50px;
+        font-size: 1.5rem;
+
+        @media(max-width: 450px) {
+            font-size: 1.1rem;
+        }
+
+        @media(max-width: 820px) {
+            flex-direction: column;
+        }
+
         .about-info {
             max-width: 500px;
-            font-size: 1.5rem;
             line-height: 35px;
             font-family: 'Nanum Gothic';
         }
 
         .about-img {
-            height: 250px;
-            width: 250px;
+            height: 300px;
+            width: 300px;
             border-radius: 50%;
+            background: url("https://gcdnb.pbrd.co/images/bWgLVYWD8SYr.png?o=1");
+            background-size: contain;
+            transition: all .4s ease;
+            background-repeat: no-repeat;
+            background-position: center;
+            @media(max-width: 420px) {
+                height: 250px;
+                width: 250px;
+            }
         }
     }
 
     .contact {
+        margin-block-start: 5rem;
+
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -31,5 +51,15 @@
         div {
             gap: 20px;
         }
+    }
+}
+
+.contact-ways {
+    img {
+        height: 50px;
+    }
+
+    .gmail-img {
+        margin-top: 5px;
     }
 }

@@ -8,12 +8,12 @@
 
 // GRIDS
 .simple-cards-grid {
-    // @media(max-width: 855px) {
-    //     grid-template-columns: repeat(auto-fill, minmax(193px, 1fr));
-    //     gap: 50px;
-    // }
+    @media(max-width: 650px) {
+        display: flex;
+        flex-direction: column;
+    }
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
     column-gap: 25px;
     row-gap: 0;
 }

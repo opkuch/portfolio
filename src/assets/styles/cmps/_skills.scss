@@ -4,8 +4,9 @@
     padding: 2rem;
     margin-block: 1rem;
     border-radius: 15%;
+    gap: 20px;
     .skills-body {
-        p {
+        
             justify-content: center;
             display: grid;
             grid-template-columns: repeat(5, 75px);
@@ -14,6 +15,16 @@
                 display: flex;
                 flex-wrap: wrap;
             }
+        
+    }
+}
+
+.skill-preview {
+    img {
+        transition: transform .4s ease;
+        &:hover {
+            transform: scale(1.2); 
+
         }
     }
 }

@@ -39,10 +39,10 @@ export function AppParticles() {
         },
         particles: {
             color: {
-                value: "#2e0f37ca",
+                value: "#000",
             },
             links: {
-                color: "#2e0f37ca",
+                color: "#000",
                 distance: 150,
                 enable: true,
                 opacity: 0.25,

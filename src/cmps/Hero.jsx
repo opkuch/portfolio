@@ -15,7 +15,7 @@ export function Hero() {
     <div id="hero" className="container hero-container flex column align-center">
       <ShootingStars />
       <section ref={titleRef} className='hero-title'>
-        <span >Hey, I'm Nadav</span>
+        <span >Hey, I'm <span className='purple'>Nadav</span></span>
       </section>
       <section ref={bodyRef} className='flex column hero-body'>
         <div>I am looking for my next challenge as a Web Developer</div>

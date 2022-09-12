@@ -11,24 +11,25 @@
     font-family: 'Satisfy', cursive;
     font-size: 3rem;
     user-select: none;
+    color: #201d21;
     cursor: pointer;
     span {
       font-weight: 800;
     }
-    .slash {
-      color: #4b185b;
-    }
+
   }
   nav {
     gap: 20px;
     align-items: center;
-    font-family: 'Cookie', cursive;
+    font-family: 'Lato', sans-serif;
     user-select: none;
     .nav-link {
       transition: 0.3s all;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
       position: relative;
       padding-block-end: 3px;
-      font-size: 2rem;
+      font-size: 1.2rem;
       @media (max-width: 600px) {
         padding-block-end: 0;
         margin-block: 1rem;
