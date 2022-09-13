@@ -1,8 +1,12 @@
 import React, {useEffect, useRef} from 'react'
-import ShootingStars from '../features/ShootingStars'
+import { useSelector } from 'react-redux'
+
 export function Hero() {
   const titleRef = useRef(null)
   const bodyRef = useRef(null)
+  const isDark = useSelector((state) => state.featureModule.isDark)
+  const containerRef = useRef()
+
   useEffect(() => {
     setTimeout(() => {
       titleRef.current.classList.add('init')
@@ -10,10 +14,13 @@ export function Hero() {
     setTimeout(() => {
       bodyRef.current.classList.add('init')
     }, 1500)
+
+    if (isDark) containerRef.current.classList.add('night')
+    else containerRef.current.classList.remove('night')
+
   })
   return (
-    <div id="hero" className="container hero-container flex column align-center">
-      <ShootingStars />
+    <div ref={containerRef} id="hero" className="container hero-container flex column align-center">
       <section ref={titleRef} className='hero-title'>
         <span >Hey, I'm <span className='purple'>Nadav</span></span>
       </section>

@@ -1,0 +1,15 @@
+footer {
+    align-items: center;
+    gap: 0;
+    flex-direction: column;
+
+    span {
+        gap: 5px;
+    }
+
+    .skill-preview {
+        img {
+            width: 30px;
+        }
+    }
+}

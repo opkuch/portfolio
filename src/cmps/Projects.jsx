@@ -1,31 +1,23 @@
-import React, {useState, useEffect} from 'react'
-import projectsDB from '../db/projectsDB.json'
+import React, {useState, useEffect, useRef} from 'react'
 import { ProjectPreview } from './ProjectPreview'
-
+import { appService } from '../services/appService'
+import { useSelector } from 'react-redux'
 export function Projects() {
-  const [projects, setProjects] = useState(projectsDB)
+  const [projects] = useState(appService.getProjects())
+  const isDark = useSelector((state) => state.featureModule.isDark)
+  const containerRef = useRef()
 
   useEffect(() => {
-    console.log(projects)
+      if (isDark) containerRef.current.classList.add('night')
+      else containerRef.current.classList.remove('night')
+  })
+
+  useEffect(() => {
   })
   return (
-    <div id="projects" className="container projects-container">
+    <div ref={containerRef} id="projects" className="container block projects-container">
       <section className="projects-header">
-      <svg className='svg-title' viewBox="0 0 300 150">
-          <symbol id="s-text">
-            <text textAnchor="middle" x="50%" y="35%" className="text--line">
-              Projects
-            </text>
-          </symbol>
-
-          <g className="g-ants">
-            <use xlinkHref="#s-text" className="text-copy"></use>
-            <use xlinkHref="#s-text" className="text-copy"></use>
-            <use xlinkHref="#s-text" className="text-copy"></use>
-            <use xlinkHref="#s-text" className="text-copy"></use>
-            <use xlinkHref="#s-text" className="text-copy"></use>
-          </g>
-        </svg>
+        <h1 className='big-header'>Projects</h1>
       </section>
       <section className='projects-body simple-cards-grid'>
         {projects.map(project => <ProjectPreview key={project.id} project={project}/>)}

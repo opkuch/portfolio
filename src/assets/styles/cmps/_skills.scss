@@ -2,29 +2,43 @@
     color: rgba(33, 28, 28, 0.089);
     background-color: rgba(21, 37, 53, 0.009);
     padding: 2rem;
-    margin-block: 1rem;
-    border-radius: 15%;
+    margin-block: 2rem;
+    border-radius: 50px;
     gap: 20px;
+    padding-block-end: 95px;
+
+    &.night {
+        .big-header {
+            color: rgb(238, 237, 237);
+        }
+
+        color: rgb(238, 237, 237);
+    }
+
+    .skills-header {
+        margin-block-end: 2rem;
+    }
+
     .skills-body {
         
             justify-content: center;
             display: grid;
             grid-template-columns: repeat(5, 75px);
-            gap: 15px;
-            @media(max-width: 360px) {
+            gap: 30px;
+            @media(max-width: 660px) {
                 display: flex;
                 flex-wrap: wrap;
             }
         
+
     }
 }
 
 .skill-preview {
     img {
-        transition: transform .4s ease;
+        transition: all .4s ease;
         &:hover {
             transform: scale(1.2); 
-
         }
     }
 }

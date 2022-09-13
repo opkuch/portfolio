@@ -2,121 +2,101 @@
     {
         "id": "s100",
         "name": "react",
-        "imgUrl": "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
-        "href": "https://reactjs.org/"
+        "imgUrl": "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
     },
     {
         "id": "s114",
         "name": "redux",
-        "imgUrl": "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg",
-        "href": "https://redux.js.org"
+        "imgUrl": "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg"
     },
     {
         "id": "s101",
         "name": "angular",
-        "imgUrl": "https://angular.io/assets/images/logos/angular/angular.svg",
-        "href": "https://angular.io"
+        "imgUrl": "https://angular.io/assets/images/logos/angular/angular.svg"
     },
     {
         "id": "s117",
         "name": "vuejs",
-        "imgUrl": "https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg",
-        "href": "https://vuejs.org/"
+        "imgUrl": "https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg"
     },
     {
         "id": "s103",
         "name": "express.js",
-        "imgUrl": "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg",
-        "href": "https://expressjs.com"
+        "imgUrl": "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg"
     },
     {
         "id": "s104",
         "name": "figma",
-        "imgUrl": "https://www.vectorlogo.zone/logos/figma/figma-icon.svg",
-        "href": "https://www.figma.com/"
+        "imgUrl": "https://www.vectorlogo.zone/logos/figma/figma-icon.svg"
     },
     {
         "id": "s105",
         "name": "firebase",
-        "imgUrl": "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg",
-        "href": "https://firebase.google.com/"
+        "imgUrl": "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg"
     },
     {
         "id": "s106",
         "name": "git",
-        "imgUrl": "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
-        "href": "https://git-scm.com/"
+        "imgUrl": "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"
     },
     {
         "id": "s107",
         "name": "heroku",
-        "imgUrl": "https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg",
-        "href": "https://heroku.com"
+        "imgUrl": "https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg"
     },
     {
         "id": "s108",
         "name": "html",
-        "imgUrl": "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg",
-        "href": "https://www.w3.org/html/"
+        "imgUrl": "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
     },
     {
         "id": "s102",
         "name": "css",
-        "imgUrl": "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
-        "href": "https://www.w3schools.com/css/"
+        "imgUrl": "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
     },
     {
         "id": "s109",
-        "name": "javascript",
-        "imgUrl": "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
-        "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+        "name": "js",
+        "imgUrl": "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
     },
     {
         "id": "s115",
         "name": "sass",
-        "imgUrl": "https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg",
-        "href": "https://sass-lang.com/"
+        "imgUrl": "https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg"
     },
     {
         "id": "s116",
         "name": "typescript",
-        "imgUrl": "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
-        "href": "https://www.typescriptlang.org/"
+        "imgUrl": "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
     },
     {
         "id": "s110",
         "name": "mongodb",
-        "imgUrl": "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg",
-        "href": "https://www.mongodb.com/"
+        "imgUrl": "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg"
     },
     {
         "id": "s111",
         "name": "mysql",
-        "imgUrl": "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
-        "href": "https://www.mysql.com/"
+        "imgUrl": "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
     },
     {
         "id": "s112",
         "name": "nodejs",
-        "imgUrl": "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg",
-        "href": "https://nodejs.org"
+        "imgUrl": "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
     },
     {
         "id": "s113",
         "name": "postman",
-        "imgUrl": "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg",
-        "href": "https://postman.com"
+        "imgUrl": "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg"
     },
     {
         "id": "s118",
         "name": "postgres",
-        "imgUrl": "https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg",
-        "href": "https://www.postgresql.org"
+        "imgUrl": "https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg"
     },
     {
         "id": "s119",
         "name": "bootstrap",
-        "imgUrl": "https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg",
-        "href": "https://getbootstrap.com"
+        "imgUrl": "https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg"
     }
 ]

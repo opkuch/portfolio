@@ -1,29 +1,32 @@
-import React from 'react'
-import skillsDb from '../db/skillsDB.json'
+import React, { useState, useEffect, useRef } from 'react'
 import SkillPreview from './SkillPreview'
+import { appService } from '../services/appService'
+import { useSelector } from 'react-redux'
 
 export function Skills() {
-  return (
-    <div id="skills" className="container skills-container">
-      <section className="skills-header">
-        <svg className="svg-title" viewBox="0 0 300 150">
-          <symbol id="skills-txt">
-            <text textAnchor="middle" x="50%" y="35%" className="text--line">
-              My Skills
-            </text>
-          </symbol>
 
-          <g className="g-ants">
-            <use xlinkHref="#skills-txt" className="skills-copy"></use>
-            <use xlinkHref="#skills-txt" className="skills-copy"></use>
-            <use xlinkHref="#skills-txt" className="skills-copy"></use>
-            <use xlinkHref="#skills-txt" className="skills-copy"></use>
-            <use xlinkHref="#skills-txt" className="skills-copy"></use>
-          </g>
-        </svg>
+  const [skills] = useState(appService.getSkills())
+  const isDark = useSelector((state) => state.featureModule.isDark)
+  const containerRef = useRef()
+
+  useEffect(() => {
+    if (isDark) containerRef.current.classList.add('night')
+    else containerRef.current.classList.remove('night')
+  })
+
+  return (
+    <div
+      ref={containerRef}
+      id="skills"
+      className="container block skills-container"
+    >
+      <section className="skills-header">
+        <h1 className="big-header">My Skills</h1>
       </section>
       <section className="skills-body">
-          {skillsDb.map(skill => <SkillPreview key={skill.id} skillObj={skill}/>)}
+        {skills.map((skill) => (
+          <SkillPreview key={skill.id} isRef={true} skillObj={skill} />
+        ))}
       </section>
     </div>
   )

@@ -3,7 +3,7 @@
         "id": "p100",
         "name": "donatello",
         "description": "Task management app - Trello inspired clone",
-        "skills": ["vue", "vuex", "scss", "mongodb", "express.js"],
+        "skills": ["s117", "s115", "s110", "s103", "s107"],
         "thumbnail": "https://gcdnb.pbrd.co/images/S91KWZNuZ98T.png?o=1",
         "url": "https://donate11o-app.herokuapp.com/#/"
     },
@@ -11,23 +11,31 @@
         "id": "p101",
         "name": "missbooks",
         "description": "Virtual library, finding and reveiwing books",
-        "skills": ["angular", "rxjs", "scss", "firebase"],
+        "skills": ["s101", "s115", "s108"],
         "thumbnail": "https://gcdnb.pbrd.co/images/Ulv43WloRX5t.png?o=1",
         "url": "https://opkuch.github.io/missBooks-ghPage/#/home"
     },
     {
+        "id": "p106",
+        "name": "email-app",
+        "description": "Email client side project",
+        "skills": ["s117", "s102", "s108"],
+        "thumbnail": "https://gcdnb.pbrd.co/images/U9sd0GKBw0xg.png?o=1",
+        "url": "https://opkuch.github.io/email-app/#/inbox"
+    },
+    {
         "id": "p102",
         "name": "bitpocket",
-        "description": "Bitcoin-app - money managing app",
-        "skills": ["react", "redux", "scss"],
+        "description": "Bitcoin-app - Bitcoin managing app",
+        "skills": ["s100", "s114", "s115"],
         "thumbnail": "https://gcdnb.pbrd.co/images/2e3rkyZsBc5D.png?o=1",
         "url": "https://opkuch.github.io/bitcoin-app/#/"
     },
     {
         "id": "p103",
         "name": "minesweeper",
-        "description": "The ol' familiar MineSweeper game - Vanilla JS Project ",
-        "skills": ["html5", "css", "js"],
+        "description": "The good ol' MineSweeper game - Vanilla JS Project ",
+        "skills": ["s108", "s102", "s109"],
         "thumbnail": "https://gcdnb.pbrd.co/images/rEL88sQptPe1.png?o=1",
         "url": "https://opkuch.github.io/mineSweeper/"
     },
@@ -35,7 +43,7 @@
         "id": "p104",
         "name": "memegen",
         "description": "Meme generator - Vanilla JS Project ",
-        "skills": ["html5", "css", "js"],
+        "skills": ["s108", "s102", "s109"],
         "thumbnail": "https://gcdnb.pbrd.co/images/iCsANHuhgaZ7.png?o=1",
         "url": "https://opkuch.github.io/meme-generator/"
     },
@@ -43,7 +51,7 @@
         "id": "p105",
         "name": "painter",
         "description": "Painter - Painting on canvas ",
-        "skills": ["html5", "css", "js"],
+        "skills": ["s108", "s102", "s109"],
         "thumbnail": "https://gcdnb.pbrd.co/images/3get9XuBALNs.png?o=1",
         "url": "https://opkuch.github.io/painter/"
     }

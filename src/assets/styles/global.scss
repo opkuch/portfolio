@@ -7,7 +7,6 @@
 @import "basics/base";
 @import "basics/helpers";
 @import "basics/layout";
-@import "basics/modals";
 @import "basics/animations";
 
 // Cmps
@@ -16,9 +15,9 @@
 @import "cmps/projects";
 @import "cmps/about";
 @import "cmps/skills";
-@import "cmps/shooting-stars";
+@import "features/dark-mode";
 @import "cmps/project-preview";
-
+@import "cmps/footer";
 // Pages
 
 @import "pages/hero-details";
@@ -36,52 +35,9 @@
     }
 }
 
-.svg-title {
-    z-index: -1;
-    max-height: 150px;
-    width: 100%;
+.big-header {
+  font-size: 72px;
+  color: rgb(30, 28, 28);
+  font-family: 'Staatliches', sans-serif;
+  text-align: center;
 }
-#s-text, #about-txt, #skills-txt {
-    font-size: 3.5rem;
-  }
-  $colors: #d86bfdc0, #a256ffcf, #8855ffb6, #a556f9d5, #7e61feda;
-  $max: 5;
-  $stroke-step: 7%; 
-  .text-copy, .about-title, .skills-copy {
-    fill: none;
-    // fill: rgba(255, 255, 255, 0.09);
-    stroke: white;
-    stroke-dasharray: $stroke-step $stroke-step * ($max - 1);
-    stroke-width: 3px;
-    animation: stroke-offset 9s 1s 1 forwards;
-    @for $item from 1 through $max {
-      $stroke-color: nth($colors, $item);
-      
-      &:nth-child(#{$item}) {
-        stroke: $stroke-color;
-        stroke-dashoffset: $stroke-step * $item;
-        }
-      }
-    }
-  
-  @keyframes stroke-offset {
-    50% {
-      stroke-dashoffset: $stroke-step * $max;  
-      stroke-dasharray: 0 $stroke-step * $max*2.5;
-    }
-  }
-  
-  .go-to-top {
-    position: fixed;
-    right: 25px;
-    bottom: 25px;
-    cursor: pointer;
-    font-size: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: all 1s ease;
-    justify-content: center;
-
-}
-

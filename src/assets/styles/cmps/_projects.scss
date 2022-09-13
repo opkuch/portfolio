@@ -1,32 +1,31 @@
 
 .projects-container {
     min-height: 100vh;
-    color: rgba(33, 28, 28, 0.089);
+    color: rgba(33, 28, 28, 0.85);
     background-color: rgba(21, 37, 53, 0.009);
     padding: 2rem;
-    // margin-block: 1rem;
-    border-radius: 15%;
+    border-radius: 50px;
+    margin-block: 2rem;
+    
+    &.night {
+        .big-header {
+            color: rgb(238, 237, 237);
+        }
+        color: rgb(238, 237, 237);
 
-    .projects-body {
     }
-    .skills {
+
+    .projects-header {
+        margin-block-end: 2rem;
+    }
+
+    .project-skills {
         padding: 1rem;
-        color: rgb(25, 23, 28);
         display: flex;
         align-items: center;
-        gap: 5px;
-        .small-skill {
-            text-transform: uppercase;
-            color: rgb(39, 34, 34);
-            font-family: 'Nanum Gothic';
-            font-weight: 600;
-            letter-spacing: 0.04em;
-            font-size: 0.7rem;
-        }
 
-    }
-    .title-line {
-        stroke:rgb(255,0,0);
-        stroke-width:2
+        .skill-list {
+            gap: 5px;
+        }
     }
 }

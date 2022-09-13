@@ -1,11 +1,22 @@
-import React from 'react'
+import React, {useEffect, useRef} from 'react'
+import { useSelector } from 'react-redux'
 import { Link } from 'react-scroll'
+import DarkModeSwitch from '../features/DarkModeSwitch'
 export function AppHeader() {
 
+  const isDark = useSelector((state) => state.featureModule.isDark)
+  const containerRef = useRef()
+
+  useEffect(() => {
+      if (isDark) containerRef.current.classList.add('night')
+      else containerRef.current.classList.remove('night')
+  })
+
   return (
-    <header className="flex column space-around align-center header-container">
-      <section className="header-logo">
+    <header ref={containerRef} className="flex column space-around align-center header-container">
+      <section className="flex align-center header-logo">
         <span onClick={() => window.scrollTo({top: 0, left: 0, behavior: 'smooth'})}><span>{'<'}</span><span className='purple'>{'n'}</span><span>{'Dev /> '}</span></span>
+        <DarkModeSwitch />
       </section>
       <nav className='flex'>
         <Link to="projects" spy={true} smooth={true} offset={-170} duration={500} className="nav-link">
@@ -18,6 +29,8 @@ export function AppHeader() {
           About Me
         </Link>
       </nav>
+      <section className='dark-mode-switch'>
+      </section>
     </header>
   )
 }
