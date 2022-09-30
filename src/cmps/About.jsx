@@ -19,7 +19,7 @@ export function About() {
       <section className="about-body">
         <div className="about-info">
           <span>
-            I am a Fullstack Web Developer from Israel. I am eager to learn about new technologies and about creating e2e applications. I have experience in writing pixel perfect SPA (Single Page Applications) with the latest technologies. I have aquired most of my knowledge the past year with hard work and dedication, as well as graduating from <a className='p-link' href='https://www.coding-academy.org/' target='_blank'>Coding Academy Fullstack Bootcamp</a>
+            Fullstack Web Developer from Israel, eager to learn about new technologies and creating e2e applications. Experienced in writing pixel perfect SPA (Single Page Applications) and complex web applications. Expanding my knowledge with hard work and dedication, and always focused on getting the best results.
           </span>
         </div>
         <div className="about-img"></div>

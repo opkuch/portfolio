@@ -3,6 +3,10 @@ footer {
     gap: 0;
     flex-direction: column;
 
+    &.night {
+        color: whitesmoke;
+    }
+
     span {
         gap: 5px;
     }

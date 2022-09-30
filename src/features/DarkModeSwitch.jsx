@@ -1,9 +1,10 @@
-import React from 'react'
+import React, {useRef, useEffect} from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 
 export default function DarkModeSwitch() {
   const dispatch = useDispatch()
   const isDark = useSelector((state) => state.featureModule.isDark)
+
   return (
     <div className='switch-wrapper'>
       <input type="checkbox" className="checkbox" id="checkbox" onChange={() => dispatch({ type: 'TOGGLE_DARKMODE', isDark: !isDark })} />

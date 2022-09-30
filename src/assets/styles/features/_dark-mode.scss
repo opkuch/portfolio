@@ -6,7 +6,7 @@
   .label {
     width: 35px;
     height: 15px;
-    background-color:#111;
+    background-color:#f1f1f1;
     display: flex;
     border-radius:50px;
     align-items: center;
@@ -14,12 +14,17 @@
     padding: 5px;
     position: relative;
     transform: scale(1.5);
+
+    &.night {
+      background-color:#111;
+    }
+
   }
   
   .ball {
     width: 11px;
     height: 11px;
-    background-color: white;
+    background-color: #111;
     position: absolute;
     top: 2px;
     left: 2px;
@@ -30,14 +35,11 @@
   /*  target the elemenent after the label*/
   .checkbox:checked + .label .ball{
     transform: translateX(20px);
-    background-color: lightsteelblue;
+    background-color: whitesmoke;
+
   }
-  
-  // .fa-moon {
-  //   color: pink;
-  // }
-  
-  // .fa-sun {
-  //   color: yellow;
-  // }
+
+  .checkbox:checked + .label {
+    background-color: #111;
+  }
   

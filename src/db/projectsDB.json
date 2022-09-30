@@ -1,3 +1,4 @@
+
 [
     {
         "id": "p100",
@@ -46,13 +47,5 @@
         "skills": ["s108", "s102", "s109"],
         "thumbnail": "https://gcdnb.pbrd.co/images/iCsANHuhgaZ7.png?o=1",
         "url": "https://opkuch.github.io/meme-generator/"
-    },
-    {
-        "id": "p105",
-        "name": "painter",
-        "description": "Painter - Painting on canvas ",
-        "skills": ["s108", "s102", "s109"],
-        "thumbnail": "https://gcdnb.pbrd.co/images/3get9XuBALNs.png?o=1",
-        "url": "https://opkuch.github.io/painter/"
     }
 ]

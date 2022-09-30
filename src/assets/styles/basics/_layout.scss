@@ -7,8 +7,12 @@
 }
 
 .block {
-    border: 5px solid #9631b571;
-    outline: 10px solid #6c21836c;
+    border: 3px solid #9631b571;
+    outline: 6px solid #6c21836c;
+    @media(max-width: 450px) {
+        border: none;
+        outline: none;
+    }
 }
 
 // GRIDS
@@ -24,8 +28,8 @@
     column-gap: 25px;
     row-gap: 25px;
 
-    @media (max-width: 1600px) {
-        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    @media (max-width: 1750px) {
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     }
 }
 
