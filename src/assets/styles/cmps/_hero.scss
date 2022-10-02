@@ -13,7 +13,34 @@
     justify-content: center;
     transition: opacity 1s linear, transform 1s ease-in-out;
     font-size: 3.5rem;
+    text-align: center;
+  }
+}
 
+.small-txt {
+  font-size: 1rem;
+  letter-spacing: 5px;
+  font-family: 'Lato';
+  text-transform: uppercase;
+}
+
+.hero-details {
+  font-size: 1.5rem;
+  font-family: 'Lato';
+  margin-block-start: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cube-animation {
+  &.night {
+    > * {
+      border-radius: 0.5px;
+      border: solid 1px darken(#852ba061, 20%);
+      background-color: #852ba042;
+
+    }
   }
 }
 
@@ -29,6 +56,7 @@
   transform-origin: top left;
   transform: scale(0) rotate(0deg) translate(-50%, -50%);
   animation: cube 12s ease-in forwards infinite;
+
   &:nth-child(2n) {
     border-color: lighten(#852ba025, 20%);
   }

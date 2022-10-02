@@ -18,13 +18,8 @@
 @import "features/dark-mode";
 @import "cmps/project-preview";
 @import "cmps/footer";
-// Pages
-
-@import "pages/hero-details";
 
 #tsparticles {
-    display:block;
-    background: #140406dd;
     position: absolute;
     top: 150px;
     z-index: 1;
@@ -33,13 +28,6 @@
     canvas {
       position: absolute;
        max-height: 150px;
-    }
-    &.hide {
-      canvas {
-        transition: transform 0.3 ease;
-        top: -150px;
-        transform: translateY(-150px);
-      }
     }
 }
 

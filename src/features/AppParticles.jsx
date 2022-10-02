@@ -3,11 +3,9 @@ import Particles from 'react-tsparticles'
 import { loadFull } from 'tsparticles'
 import { useCallback } from 'react'
 import { useSelector } from 'react-redux'
-import scrollDirectionHook from './useScrollDirection'
 
 export function AppParticles() {
   const isDark = useSelector((state) => state.featureModule.isDark)
-  const scrollDirection = scrollDirectionHook();
 
   const dayOptions = {
     background: {
@@ -157,8 +155,8 @@ export function AppParticles() {
   }, [])
 
   return isDark ? (
-    <Particles className={`${ scrollDirection === "down" ? "hide" : "show"}`} id="tsparticles" init={particlesInit} options={darkOptions} />
+    <Particles id="tsparticles" init={particlesInit} options={darkOptions} />
   ) : (
-    <Particles className={`${ scrollDirection === "down" ? "hide" : "show"}`} id="tsparticles" init={particlesInit} options={dayOptions} />
+    <Particles id="tsparticles" init={particlesInit} options={dayOptions} />
   )
 }

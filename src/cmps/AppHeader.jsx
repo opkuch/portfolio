@@ -2,12 +2,10 @@ import React, { useEffect, useRef } from 'react'
 import { useSelector } from 'react-redux'
 import { Link } from 'react-scroll'
 import DarkModeSwitch from '../features/DarkModeSwitch'
-import scrollDirectionHook from '../features/useScrollDirection'
 
 export function AppHeader() {
   const isDark = useSelector((state) => state.featureModule.isDark)
   const containerRef = useRef()
-  const scrollDirection = scrollDirectionHook();
 
   useEffect(() => {
     if (isDark) containerRef.current.classList.add('night')
@@ -17,7 +15,7 @@ export function AppHeader() {
   return (
     <header
       ref={containerRef}
-      className={`flex column space-around align-center header-container ${ scrollDirection === "down" ? "hide" : "show"}`}>
+      className='flex column space-around align-center header-container'>
       <section className="flex align-center header-logo">
         <span>
           <span>{'<'}</span>

@@ -11,12 +11,12 @@
         .big-header {
             color: rgb(238, 237, 237);
         }
-        color: rgb(238, 237, 237);
+        color: #dadee4;
 
     }
 
     .projects-header {
-        margin-block-end: 2rem;
+        margin-block-end: 4rem;
     }
 
     .project-skills {
@@ -27,5 +27,10 @@
         .skill-list {
             gap: 5px;
         }
+    }
+
+    .projects-body {
+        display: flex;
+        flex-direction: column;
     }
 }

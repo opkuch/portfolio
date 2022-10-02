@@ -2,50 +2,60 @@
 [
     {
         "id": "p100",
-        "name": "donatello",
-        "description": "Task management app - Trello inspired clone",
+        "name": "donatello - Trello inspired clone",
+        "description": "Donatello is the flexible work management tool where teams can ideate plans and collaborate on projects. Developed with Vue.js, Vuex, SASS, mongoDB, Express and WebSockets. ",
         "skills": ["s117", "s115", "s110", "s103", "s107"],
         "thumbnail": "https://gcdnb.pbrd.co/images/S91KWZNuZ98T.png?o=1",
-        "url": "https://donate11o-app.herokuapp.com/#/"
-    },
-    {
-        "id": "p101",
-        "name": "missbooks",
-        "description": "Virtual library, finding and reveiwing books",
-        "skills": ["s101", "s115", "s108"],
-        "thumbnail": "https://gcdnb.pbrd.co/images/Ulv43WloRX5t.png?o=1",
-        "url": "https://opkuch.github.io/missBooks-ghPage/#/home"
+        "demoUrl": "https://donate11o-app.herokuapp.com/#/",
+        "repoUrl": "https://github.com/opkuch/donatello"
+
     },
     {
         "id": "p106",
         "name": "email-app",
-        "description": "Email client side project",
+        "description": "Email app client side project. Developed with Vue.js, Vuex and SASS, and using local storage in order to store the data",
         "skills": ["s117", "s102", "s108"],
         "thumbnail": "https://gcdnb.pbrd.co/images/U9sd0GKBw0xg.png?o=1",
-        "url": "https://opkuch.github.io/email-app/#/inbox"
+        "demoUrl": "https://opkuch.github.io/email-app/#/inbox",
+        "repoUrl": "https://github.com/opkuch/email-app"
+
     },
     {
         "id": "p102",
         "name": "bitpocket",
-        "description": "Bitcoin-app - Bitcoin managing app",
+        "description": "Bitcoin managing app. Developed with React, Redux and SASS, and using local storage in order to store the data",
         "skills": ["s100", "s114", "s115"],
         "thumbnail": "https://gcdnb.pbrd.co/images/2e3rkyZsBc5D.png?o=1",
-        "url": "https://opkuch.github.io/bitcoin-app/#/"
+        "demoUrl": "https://opkuch.github.io/bitcoin-app/#/",
+        "repoUrl": "https://github.com/opkuch/bitcoin-app"
+
     },
     {
         "id": "p103",
         "name": "minesweeper",
-        "description": "The good ol' MineSweeper game - Vanilla JS Project ",
+        "description": "The good ol' MineSweeper game halloween edition - Vanilla JS Project. Developed using plain HTML, CSS, JS ",
         "skills": ["s108", "s102", "s109"],
         "thumbnail": "https://gcdnb.pbrd.co/images/rEL88sQptPe1.png?o=1",
-        "url": "https://opkuch.github.io/mineSweeper/"
+        "demoUrl": "https://opkuch.github.io/mineSweeper/",
+        "repoUrl": "https://github.com/opkuch/mineSweeper"
     },
     {
         "id": "p104",
         "name": "memegen",
-        "description": "Meme generator - Vanilla JS Project ",
+        "description": "Meme generator - Vanilla JS Project. Developed using plain HTML, CSS, JS",
         "skills": ["s108", "s102", "s109"],
         "thumbnail": "https://gcdnb.pbrd.co/images/iCsANHuhgaZ7.png?o=1",
-        "url": "https://opkuch.github.io/meme-generator/"
+        "demoUrl": "https://opkuch.github.io/meme-generator/",
+        "repoUrl": "https://github.com/opkuch/meme-generator"
+    },
+    {
+        "id": "p101",
+        "name": "missbooks",
+        "description": "Virtual library, finding books and get inspired by famous quotes. Developed with Angular, RxJS and SASS. Running on serverless backend using firebase tools for authentication and storing data.",
+        "skills": ["s101", "s115", "s108", "s105"],
+        "thumbnail": "https://gcdnb.pbrd.co/images/Ulv43WloRX5t.png?o=1",
+        "demoUrl": "https://opkuch.github.io/missBooks-ghPage/#/home",
+        "repoUrl": "https://github.com/opkuch/missBook-Angular"
+
     }
 ]

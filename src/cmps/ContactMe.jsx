@@ -16,7 +16,7 @@ export function ContactMe() {
         />
       </a>
       <a
-        href="https://gmail.com"
+        href="mailto:nadavbenhur@gmail.com"
         target="_blank"
       >
         <img
@@ -25,7 +25,7 @@ export function ContactMe() {
         />
       </a>
       <a
-        href="https://linkedin.com/in/nadav-ben-hur-381584249"
+        href="https://github.com/opkuch"
         target="_blank"
       >
         <img

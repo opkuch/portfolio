@@ -7,18 +7,9 @@
   box-shadow: 0 5px 50px 10px rgba(255, 255, 255, 0.337);
   z-index: 10;
   color: #201d21;
-  transition-property: all; 
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 500ms;
-
   &.night  {
     box-shadow: 0 5px 50px 10px rgba(45, 44, 44, 0.337);
     color: rgb(238, 237, 237);
-  }
-
-  &.hide {
-    top: -150px;
-    transform: translateY(-150px);
   }
 
   .header-logo {

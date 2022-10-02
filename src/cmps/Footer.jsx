@@ -4,6 +4,7 @@ import { appService } from '../services/appService'
 import { useSelector } from 'react-redux'
 export default function Footer() {
     const reactSkill = appService.getSkillById('s100')
+    const reduxSkill = appService.getSkillById('s114')
     const isDark = useSelector((state) => state.featureModule.isDark)
     const containerRef = useRef()
   
@@ -13,6 +14,6 @@ export default function Footer() {
     })
   
   return (
-    <footer ref={containerRef} className='flex justify-center'><span className='flex align-center'>This website is built with <SkillPreview skillObj={reactSkill} isRef={false}/></span>Collaborate with me - nadavbenhur@gmail.com</footer>
+    <footer ref={containerRef} className='flex justify-center'><span className='flex align-center'>Coded & Designed by Nadav Ben Hur using <SkillPreview skillObj={reactSkill} isRef={false}/> <SkillPreview skillObj={reduxSkill} isRef={false}/></span></footer>
   )
 }

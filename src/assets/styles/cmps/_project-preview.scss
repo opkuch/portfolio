@@ -1,30 +1,71 @@
 .project-preview {
+  gap: 50px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.269);
+  padding-block: 50px;
+  .small-title {
+    font-size: 2.5rem;
+  }
 
-    border-radius: 5px;
-
-    .small-title {
-        font-size: 1.5rem;
-    }
+  .thumbnail-container {
     .project-thumbnail {
+      max-width: 500px;
+      @media(max-width: 680px) {
         max-width: 300px;
-        cursor: pointer;
-        transition: all .3s ease;
-        margin-block-start: 1rem;
-        &:hover {
-            transform: scale(1.2); 
-        }
+      }
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill-list {
+    justify-content: center;
+    .skill-preview {
+      img {
+        max-width: 40px;
+      }
+    }
+    position: relative;
+    bottom: 25px;
+    gap: 10px;
+  }
+
+  .project-details {
+    gap: 15px;
+    .description {
+      font-size: 1.4rem;
+      max-width: 650px;
+      line-height: 35px;
+      font-family: Arial, Helvetica, sans-serif;
+      min-height: 150px;
+      word-break: keep-all;
     }
 
-    .project-skills {
-        gap: 15px;
-        .skill-preview {
-            img {
-                max-width: 40px;
-            }
-        }
+    .project-actions {
+      display: flex;
+      gap: 15px;
 
-        .skill-list {
-            gap: 10px;
-        }
+      .nice-button {
+        padding: 0.5rem;
+        font-size: 1rem;
+      }
     }
+    @media (max-width: 810px) {
+      text-align: center;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 810px) {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &:first-child {
+    padding-top: 0;
+  }
 }

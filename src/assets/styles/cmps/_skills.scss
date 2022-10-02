@@ -33,12 +33,3 @@
 
     }
 }
-
-.skill-preview {
-    img {
-        transition: all .4s ease;
-        &:hover {
-            transform: scale(1.2); 
-        }
-    }
-}

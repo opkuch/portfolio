@@ -17,9 +17,9 @@ export function Projects() {
   return (
     <div ref={containerRef} id="projects" className="container block projects-container">
       <section className="projects-header">
-        <h1 className='big-header'>Projects</h1>
+        <h1 className='big-header'>Coding Projects</h1>
       </section>
-      <section className='projects-body simple-cards-grid'>
+      <section className='projects-body'>
         {projects.map(project => <ProjectPreview key={project.id} project={project}/>)}
       </section>
     </div>
