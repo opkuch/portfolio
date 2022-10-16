@@ -3,6 +3,7 @@ import { ContactMe } from './ContactMe'
 import { useSelector, useDispatch } from 'react-redux'
 import Loader from './Loader'
 import ImageParticles from '../features/ImageParticles'
+import { AppParticles } from '../features/AppParticles'
 
 export function About() {
   const isDark = useSelector((state) => state.featureModule.isDark)

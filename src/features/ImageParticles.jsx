@@ -6,6 +6,7 @@ export default function ImageParticles() {
   let canvas
   let ctx
   let image
+  let animationId
   useEffect(() => {
     canvas = canvasRef.current
     ctx = canvas.getContext('2d')
@@ -18,10 +19,15 @@ export default function ImageParticles() {
       ctx.clearRect(0, 0, canvas.width, canvas.height)
       effect.draw(ctx)
       effect.update()
-      requestAnimationFrame(animate)
+      animationId = requestAnimationFrame(animate)
     }
     animate()
-  
+    return () => {
+        cancelAnimationFrame(animationId)
+        window.removeEventListener('mousemove', event => {
+
+        })
+    }
   }, [])
 
   class Particle {
@@ -35,13 +41,13 @@ export default function ImageParticles() {
       this.originX = Math.floor(x)
       this.originY = Math.floor(y)
       this.color = color
-      this.ease = 0.5
+      this.ease = 0.2
       this.dx = 0
       this.dy = 0
       this.force = 0
       this.distance = 0
       this.angle = 0
-      this.friction = 0.5
+      this.friction = 0.8
     }
 
     draw(context) {
