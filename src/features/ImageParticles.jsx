@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { imageUrl } from '../assets/img/profilePicData'
 export default function ImageParticles() {
   const canvasRef = useRef()
@@ -9,19 +9,23 @@ export default function ImageParticles() {
   let animationId
   useEffect(() => {
     canvas = canvasRef.current
-    ctx = canvas.getContext('2d')
     image = imageRef.current
-    canvas.width = image.offsetHeight - 300
-    canvas.height = image.offsetWidth - 300
-    const effect = new Effect(canvas.width, canvas.height)
-    effect.init(ctx)
-    function animate() {
-      ctx.clearRect(0, 0, canvas.width, canvas.height)
-      effect.draw(ctx)
-      effect.update()
-      animationId = requestAnimationFrame(animate)
+    image.onload = function(){
+        if (!canvas) return
+        ctx = canvas.getContext('2d')
+        if (!ctx || !image) return
+        canvas.width = image.offsetHeight - 300
+        canvas.height = image.offsetWidth - 300
+        const effect = new Effect(canvas.width, canvas.height)
+        effect.init(ctx)
+        const animate = () => {
+          ctx.clearRect(0, 0, canvas.width, canvas.height)
+          effect.draw(ctx)
+          effect.update()
+          animationId = requestAnimationFrame(animate)
+        }
+        animate()
     }
-    animate()
     return () => {
         cancelAnimationFrame(animationId)
         window.removeEventListener('mousemove', event => {
@@ -29,6 +33,7 @@ export default function ImageParticles() {
         })
     }
   }, [])
+
 
   class Particle {
     constructor(effect, x, y, color) {
@@ -82,7 +87,7 @@ export default function ImageParticles() {
       this.centerY = this.height * 0.5
       this.x = this.centerX - this.image.width * 0.5
       this.y = this.centerY - this.image.height * 0.5
-      this.gap = 4
+      this.gap = 3
       this.mouse = {
         radius: 2500,
         x: undefined,
@@ -120,7 +125,6 @@ export default function ImageParticles() {
       this.particleArray.forEach((particle) => particle.update())
     }
   }
-
   return (
     <div>
       <canvas className="my-canvas" ref={canvasRef}></canvas>

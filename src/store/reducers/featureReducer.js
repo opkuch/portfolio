@@ -1,6 +1,6 @@
 const INITIAL_STATE = {
     isDark: true,
-    isLoading: false
+    isLoading: true
 }
 
 export function featureReducer(state = INITIAL_STATE, action) {
