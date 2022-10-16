@@ -12,13 +12,13 @@
     align-items: center;
     justify-content: space-between;
     padding: 5px;
-    position: relative;
+    position: absolute;
     transform: scale(1.5);
-
+    right: 20px;
+    top: 75px;
     &.night {
       background-color:#111;
     }
-
   }
   
   .ball {

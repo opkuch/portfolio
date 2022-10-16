@@ -12,10 +12,18 @@ body {
   font-family: 'Lato', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(to bottom, #efefef, #d7d7d7, #a7a7a75d);
+  max-height: 100vh;
   &.night {
-    background: linear-gradient(to bottom, rgb(14, 14, 14), #1c1b1b, #1b1919ea);
+    background-color: #1e1919;
   }
+  
+}
+
+.main {
+  flex: 1;
+}
+.app-container {
+  min-height: 100vh;
 }
 
 img {
@@ -87,7 +95,7 @@ input {
 }
 
 ::-webkit-scrollbar-thumb:vertical {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(174, 0, 223, 0.8);
   -webkit-border-radius: 100px;
 }
 

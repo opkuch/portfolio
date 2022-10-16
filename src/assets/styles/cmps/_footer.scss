@@ -2,7 +2,6 @@ footer {
     align-items: center;
     gap: 0;
     flex-direction: column;
-
     &.night {
         color: whitesmoke;
     }
@@ -15,5 +14,9 @@ footer {
         img {
             width: 30px;
         }
+    }
+
+    @media(max-width: 500px) {
+        font-size: 0.7rem;
     }
 }

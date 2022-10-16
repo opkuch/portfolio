@@ -5,7 +5,10 @@ export function ProjectPreview({ project }) {
   return (
     <div className="flex project-preview">
       <section className="thumbnail-container">
-        <img className="project-thumbnail" src={project.thumbnail} />
+        <img className="project-thumbnail" src={project.thumbnail} alt=""/>
+      </section>
+      <section className="project-details flex column">
+        <span className="small-title">{project.name}</span>
         <div className="flex skill-list">
           {project.skills.map((skillId) => (
             <SkillPreview
@@ -15,9 +18,7 @@ export function ProjectPreview({ project }) {
             />
           ))}
         </div>
-      </section>
-      <section className="project-details flex column">
-        <span className="small-title">{project.name}</span>
+
         <span className="description">{project.description}</span>
         <section className="project-actions">
           <button

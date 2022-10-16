@@ -1,28 +1,41 @@
 import React, {useRef, useEffect} from 'react'
-import { useSelector } from 'react-redux'
 import { ContactMe } from './ContactMe'
+import { useSelector, useDispatch } from 'react-redux'
+import Loader from './Loader'
+import ImageParticles from '../features/ImageParticles'
 
 export function About() {
   const isDark = useSelector((state) => state.featureModule.isDark)
   const containerRef = useRef()
+  const isLoading = useSelector((state) => state.featureModule.isLoading)
+  const dispatch = useDispatch()
 
   useEffect(() => {
-      if (isDark) containerRef.current.classList.add('night')
-      else containerRef.current.classList.remove('night')
-  })
+    
+    setTimeout(() => {
+      dispatch({type: 'TOGGLE_LOADER', isLoading: false})
+    }, 4500)
+    return () => dispatch({type: 'TOGGLE_LOADER', isLoading: true})
+  }, [dispatch])
 
-  return (
-    <div ref={containerRef} id="about" className="container block about-container">
+  useEffect(() => {
+      if (isDark && containerRef.current) containerRef.current.classList.add('night')
+      else if (containerRef.current) containerRef.current.classList.remove('night')
+  }, [isDark, isLoading])
+  if (isLoading) return <Loader />
+  else return (
+    <div ref={containerRef} id="about" className="about-container">
       <section className="about-header">
-        <h1 className='big-header'>About Me</h1>
+        <h1 className='big-header'>a little bit about me..</h1>
       </section>
       <section className="about-body">
         <div className="about-info">
           <span>
-            Fullstack Web Developer from Israel, eager to learn about new technologies and creating e2e applications. Experienced in writing pixel perfect SPA (Single Page Applications) and complex web applications. Expanding my knowledge with hard work and dedication, and always focused on getting the best results.
+            Fullstack Web Developer from Israel, eager to learn about new technologies and creating e2e applications. Experienced in writing pixel perfect SPA (Single Page Applications) and complex web applications.
           </span>
         </div>
-        <div className="about-img"></div>
+        {/* <div className="about-img"></div> */}
+        <ImageParticles />
       </section>
       <ContactMe />
     </div>

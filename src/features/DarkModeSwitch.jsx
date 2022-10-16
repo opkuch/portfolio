@@ -1,4 +1,3 @@
-import React, { useRef, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 
 export default function DarkModeSwitch() {
@@ -6,7 +5,7 @@ export default function DarkModeSwitch() {
   const isDark = useSelector((state) => state.featureModule.isDark)
 
   return (
-    <div className="switch-wrapper tooltip">
+    <div className="switch-wrapper">
       <input
         type="checkbox"
         className="checkbox"
@@ -18,7 +17,6 @@ export default function DarkModeSwitch() {
         <i className="fas fa-sun"></i>
         <div className="ball"> </div>
       </label>
-        <span class="tooltiptext">Darkmode Switch</span>
     </div>
   )
 }

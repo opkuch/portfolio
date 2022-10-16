@@ -1,34 +1,31 @@
 // Externals
 @import url('https://fonts.googleapis.com/css2?family=Cookie&family=Lato&family=Lexend+Deca:wght@300&family=Nanum+Gothic:wght@400;700&family=Noto+Sans+KR:wght@700&family=Satisfy&family=Staatliches&family=Thasadith:wght@700&family=Varela+Round&display=swap');
 
-
 // Basics
-@import "basics/typography";
-@import "basics/base";
-@import "basics/helpers";
-@import "basics/layout";
-@import "basics/animations";
+@import 'basics/typography';
+@import 'basics/base';
+@import 'basics/helpers';
+@import 'basics/layout';
+@import 'basics/animations';
 
 // Cmps
-@import "cmps/app-header";
-@import "cmps/hero";
-@import "cmps/projects";
-@import "cmps/about";
-@import "cmps/skills";
-@import "features/dark-mode";
-@import "cmps/project-preview";
-@import "cmps/footer";
+@import 'cmps/app-header';
+@import 'cmps/hero';
+@import 'cmps/projects';
+@import 'cmps/about';
+@import 'cmps/skills';
+@import 'features/dark-mode';
+@import 'cmps/project-preview';
+@import 'cmps/footer';
+@import 'cmps/loader';
 
 #tsparticles {
+  .example {
     position: absolute;
-    top: 150px;
-    z-index: 1;
-    opacity: 0.9;
-    transition: all 0.3 ease;
-    canvas {
-      position: absolute;
-       max-height: 150px;
-    }
+    top: 0;
+    // max-height: 100vh;
+    z-index: -1;
+  }
 }
 
 .big-header {
@@ -37,4 +34,30 @@
   font-family: 'Staatliches', sans-serif;
   text-align: center;
   text-shadow: 5px 0 20px rgba(255, 195, 255, 0.3);
+
+  @media (max-width: 900px) {
+    font-size: 48px;
+  }
+}
+
+.my-canvas {
+  // max-width: 350px;
+  border-radius: 50%;
+  min-height: 350px;
+  min-width: 350px;
+  @media(max-width: 740px) {
+    display: none;
+  }
+}
+
+.canvas-image {
+  opacity: 0;
+  position: absolute;
+  min-height: 350px;
+  min-width: 350px;
+  @media(max-width: 740px) {
+    opacity: 1;
+    position: unset;
+    z-index: 0;
+  }
 }

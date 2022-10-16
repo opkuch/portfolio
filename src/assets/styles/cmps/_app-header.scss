@@ -1,15 +1,18 @@
 .header-container {
-  position: sticky;
-  top: 0;
-  // color: rgb(38, 33, 33);
-  background-color: rgba(53, 47, 47, 0.051);
-  min-height: 150px;
-  box-shadow: 0 5px 50px 10px rgba(255, 255, 255, 0.337);
-  z-index: 10;
+  background-color: transparent;
   color: #201d21;
+  .logo {
+    max-height: 175px;
+
+    @media(max-width: 1500px) {
+      max-height: 150px;
+    }    
+
+  }
+
   &.night  {
-    box-shadow: 0 5px 50px 10px rgba(45, 44, 44, 0.337);
-    color: rgb(238, 237, 237);
+    // box-shadow: 0 5px 50px 10px rgba(45, 44, 44, 0.337);
+    color: rgb(220, 217, 217);
   }
 
   .header-logo {
@@ -17,24 +20,17 @@
     font-size: 3rem;
     user-select: none;
     width: 100%;
-    align-self: center;
-    span {
-      font-weight: 800;
-      flex-grow: 1;
-      text-align: center;
-    }
-
-    .switch-wrapper {
-      flex-basis: 50px;
-    }
-
+    justify-content: center;
   }
   nav {
     gap: 20px;
     align-items: center;
     font-family: 'Lato', sans-serif;
     user-select: none;
-
+    flex-basis: 50%;
+    ul {
+      gap: 15px;
+    }
     .nav-link {
       transition: 0.3s all;
       letter-spacing: 0.04em;
@@ -44,31 +40,32 @@
       font-size: 1.2rem;
       @media (max-width: 600px) {
         padding-block-end: 0;
-        margin-block: 1rem;
+        margin-block-end: 1rem;
+      }
+
+      .dot {
+        position: relative;
+        bottom: -19px;
+        left: 50%;
       }
 
       &.active {
-        box-shadow: 0 3px #9631b5;
-        color: #6c2183;
+        & .dot {
+          opacity: 1;
+          transform: translateX(0);
+        }
       }
+    }
 
-      &:not(.active)::after {
-        content: '';
-        position: absolute;
-        bottom: -2px;
-        // right: 50%;
-        display: block;
-        min-height: 3px;
-        width: 0;
-        background: #9631b5;
-        transition: width 0.5s ease 0s, left 0.5s ease 0s, opacity 0.5s ease;
-        opacity: 0;
-      }
+    li {
+      gap: 1.5px;
 
-      &:hover::after {
-        width: 100%;
-        left: 0;
+
+      &:not(.active):hover .dot {
+        transition: all .5s ease-in-out;
+        transform: translateX(0);
         opacity: 1;
+        position: relative;
       }
     }
   }

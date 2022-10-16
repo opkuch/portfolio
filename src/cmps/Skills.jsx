@@ -18,7 +18,7 @@ export function Skills() {
     <div
       ref={containerRef}
       id="skills"
-      className="container block skills-container"
+      className="skills-container"
     >
       <section className="skills-header">
         <h1 className="big-header">My Skills</h1>

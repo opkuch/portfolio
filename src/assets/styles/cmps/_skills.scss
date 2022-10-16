@@ -1,18 +1,19 @@
 .skills-container {
     color: rgba(33, 28, 28, 0.089);
-    background-color: rgba(21, 37, 53, 0.009);
-    padding: 2rem;
+    padding: 10rem;
     margin-block: 2rem;
     border-radius: 50px;
     gap: 20px;
     padding-block-end: 95px;
-
     &.night {
         .big-header {
             color: rgb(238, 237, 237);
         }
 
-        color: rgb(238, 237, 237);
+        .skills-body {
+            background-color: rgba(255, 65, 255, 0.1);
+
+        }
     }
 
     .skills-header {
@@ -20,11 +21,13 @@
     }
 
     .skills-body {
-        
+            background-color: rgba(209, 208, 208, 0.655);
             justify-content: center;
             display: grid;
             grid-template-columns: repeat(5, 75px);
             gap: 30px;
+            padding: 1rem;
+            border-radius: 50px;
             @media(max-width: 660px) {
                 display: flex;
                 flex-wrap: wrap;
