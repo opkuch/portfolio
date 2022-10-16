@@ -26,7 +26,6 @@ export function Hero() {
   //   angularSkill,
   //   firebaseSkill,
   // ]
-
   useEffect(() => {
     if (isDark) {
       containerRef.current.classList.add('night')

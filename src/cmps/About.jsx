@@ -11,7 +11,6 @@ export function About() {
   const dispatch = useDispatch()
 
   useEffect(() => {
-    
     setTimeout(() => {
       dispatch({type: 'TOGGLE_LOADER', isLoading: false})
     }, 4500)
@@ -26,7 +25,7 @@ export function About() {
   else return (
     <div ref={containerRef} id="about" className="about-container">
       <section className="about-header">
-        <h1 className='big-header'>a little bit about me..</h1>
+        <h1 className='big-header'>a little <span className="purple">bit</span> about me..</h1>
       </section>
       <section className="about-body">
         <div className="about-info">
