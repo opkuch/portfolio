@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef } from 'react'
 import { imageUrl } from '../assets/img/profilePicData'
 export default function ImageParticles() {
   const canvasRef = useRef()
@@ -29,7 +29,6 @@ export default function ImageParticles() {
     return () => {
         cancelAnimationFrame(animationId)
         window.removeEventListener('mousemove', event => {
-
         })
     }
   }, [])

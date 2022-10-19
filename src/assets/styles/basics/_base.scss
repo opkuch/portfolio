@@ -70,14 +70,6 @@ input {
  }
 }
 
-button {
-  font-family: inherit;
-  cursor: pointer;
-  * {
-    pointer-events: none;
-  }
-}
-
 input {
   font-family: inherit;
   text-align: inherit;

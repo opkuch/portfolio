@@ -40,10 +40,10 @@ export function Hero() {
         <section className="hero-title flex column align-center">
           <p className="small-txt">hi, my name is</p>
           <p className="purple">Nadav Ben Hur</p>
-          <p>I am a fullstack dev.</p>
+          <p>I am a web developer</p>
           <Blob />
           <div className="hero-details">
-            <Typewriter
+            {/* <Typewriter
               onInit={(typewriter) => {
                 typewriter
                   .typeString('My Passion')
@@ -55,7 +55,10 @@ export function Hero() {
                   .typeString(' UI/UX experiences')
                   .start()
               }}
-            />{' '}
+            />{' '} */}
+            <span>
+              My passion is to build amazing UI/UX experiences
+            </span>
             <a className="mail-link" href="mailto:nadavbenhur@gmail.com">
               <button className="nice-button">work with me</button>
             </a>

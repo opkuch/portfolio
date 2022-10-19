@@ -1,36 +1,29 @@
-import React from 'react'
-import SkillPreview from './SkillPreview'
-import { appService } from '../services/appService'
+import {useState} from 'react'
+import {Button} from './Button'
+import ProjectDetails from './ProjectDetails'
 export function ProjectPreview({ project }) {
-  return (
-    <div className="flex project-preview">
-      <section className="thumbnail-container">
-        <img className="project-thumbnail" src={project.thumbnail} alt=""/>
-      </section>
-      <section className="project-details flex column">
-        <span className="small-title">{project.name}</span>
-        <div className="flex skill-list">
-          {project.skills.map((skillId) => (
-            <SkillPreview
-              key={skillId}
-              skillObj={appService.getSkillById(skillId)}
-              isRef={false}
-            />
-          ))}
-        </div>
+  const [isDetails, setIsDetails] = useState(false)
 
-        <span className="description">{project.description}</span>
+  const openDemo = () => {
+    window.open(project.demoUrl, '_blank')
+  }
+
+  const openRepo = () => {
+    window.open(project.repoUrl, '_blank')
+  }
+
+  const openDetails = () => {
+    setIsDetails(!isDetails)
+  }
+  return (
+    <div className="flex project-preview" style={{background: `url(${project.thumbnail})`, backgroundRepeat: 'no-repeat'}}>
         <section className="project-actions">
-          <button
-            className="nice-button"
-            onClick={() => window.open(project.demoUrl, '_blank')}
-          >
-            view demo
-          </button>
-          <button className='nice-button' onClick={() => window.open(project.repoUrl, '_blank')}>
-            github repo
-          </button>
-        </section>
+          {isDetails? <ProjectDetails name={project.name} description={project.description} skills={project.skills} /> : ''}
+          <div className='wrapper'>
+            <Button color='#f1f1f1' endIcon='preview' text='Demo' clickFunc={openDemo}/>
+            <Button color='#f1f1f1' text='Repository' endIcon='code' clickFunc={openRepo}/>
+            <Button color='#f1f1f1' text='Details' endIcon='info' clickFunc={openDetails}/>
+          </div>
       </section>
     </div>
   )

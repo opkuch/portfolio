@@ -13,6 +13,12 @@
   &.night  {
     // box-shadow: 0 5px 50px 10px rgba(45, 44, 44, 0.337);
     color: rgb(220, 217, 217);
+
+    .nav-link {
+      .dot {
+        border-radius: 0;
+      }
+    }
   }
 
   .header-logo {
@@ -21,6 +27,8 @@
     user-select: none;
     width: 100%;
     justify-content: center;
+    margin-block: 1rem;
+
   }
   nav {
     gap: 20px;
@@ -62,7 +70,7 @@
 
 
       &:not(.active):hover .dot {
-        transition: all .5s ease-in-out;
+        transition: all .25s ease-in-out;
         transform: translateX(0);
         opacity: 1;
         position: relative;

@@ -2,7 +2,7 @@ import React, {useState, useEffect, useRef} from 'react'
 import { ProjectPreview } from './ProjectPreview'
 import { appService } from '../services/appService'
 import { useSelector, useDispatch } from 'react-redux'
-import Loader from './Loader'
+import Loader from '../features/Loader'
 
 export function Projects() {
   const [projects] = useState(appService.getProjects())
@@ -14,7 +14,7 @@ export function Projects() {
   useEffect(() => {
     setTimeout(() => {
       dispatch({type: 'TOGGLE_LOADER', isLoading: false})
-    }, 4500)
+    }, 3000)
     return () => dispatch({type: 'TOGGLE_LOADER', isLoading: true})
   }, [dispatch])
   useEffect(() => {

@@ -5,7 +5,7 @@
         "name": "donatello - Trello inspired clone",
         "description": "Donatello is the flexible work management tool where teams can ideate plans and collaborate on projects. Developed with Vue.js, Vuex, SASS, mongoDB, Express and Socket.io. ",
         "skills": ["s117", "s115", "s110", "s112"],
-        "thumbnail": "https://gcdnb.pbrd.co/images/S91KWZNuZ98T.png?o=1",
+        "thumbnail": "https://i.postimg.cc/jSrjY4Cc/donatello-thumb.png",
         "demoUrl": "https://donate11o-app.herokuapp.com/#/",
         "repoUrl": "https://github.com/opkuch/donatello"
 
@@ -29,15 +29,6 @@
         "demoUrl": "https://opkuch.github.io/email-app/#/inbox",
         "repoUrl": "https://github.com/opkuch/email-app"
 
-    },
-    {
-        "id": "p103",
-        "name": "minesweeper",
-        "description": "The good ol' MineSweeper game halloween edition - Vanilla JS Project. Developed using plain HTML, CSS, JS ",
-        "skills": ["s108", "s102", "s109"],
-        "thumbnail": "https://gcdnb.pbrd.co/images/rEL88sQptPe1.png?o=1",
-        "demoUrl": "https://opkuch.github.io/mineSweeper/",
-        "repoUrl": "https://github.com/opkuch/mineSweeper"
     },
     {
         "id": "p104",

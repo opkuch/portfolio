@@ -25,11 +25,6 @@
         "imgUrl": "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg"
     },
     {
-        "id": "s104",
-        "name": "figma",
-        "imgUrl": "https://www.vectorlogo.zone/logos/figma/figma-icon.svg"
-    },
-    {
         "id": "s105",
         "name": "firebase",
         "imgUrl": "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg"
@@ -38,11 +33,6 @@
         "id": "s106",
         "name": "git",
         "imgUrl": "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"
-    },
-    {
-        "id": "s107",
-        "name": "heroku",
-        "imgUrl": "https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg"
     },
     {
         "id": "s108",
@@ -88,15 +78,5 @@
         "id": "s113",
         "name": "postman",
         "imgUrl": "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg"
-    },
-    {
-        "id": "s118",
-        "name": "postgres",
-        "imgUrl": "https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg"
-    },
-    {
-        "id": "s119",
-        "name": "bootstrap",
-        "imgUrl": "https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg"
     }
 ]

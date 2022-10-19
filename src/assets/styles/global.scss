@@ -1,5 +1,5 @@
 // Externals
-@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Lato&family=Lexend+Deca:wght@300&family=Nanum+Gothic:wght@400;700&family=Noto+Sans+KR:wght@700&family=Satisfy&family=Staatliches&family=Thasadith:wght@700&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Lato&family=Lexend+Deca:wght@300&family=Nanum+Gothic:wght@400;700&family=Noto+Sans+KR:wght@700&family=Roboto&family=Satisfy&family=Staatliches&family=Sue+Ellen+Francisco&family=Thasadith:wght@700&family=Varela+Round&display=swap');
 
 // Basics
 @import 'basics/typography';
@@ -18,6 +18,9 @@
 @import 'cmps/project-preview';
 @import 'cmps/footer';
 @import 'cmps/loader';
+
+// reusable cmps
+@import 'reusable/button';
 
 #tsparticles {
   .example {
@@ -58,6 +61,5 @@
   @media(max-width: 740px) {
     opacity: 1;
     position: unset;
-    z-index: 0;
   }
 }

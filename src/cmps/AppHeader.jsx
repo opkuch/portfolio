@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from 'react'
 import { useSelector } from 'react-redux'
 import DarkModeSwitch from '../features/DarkModeSwitch'
-import nightLogo from '../assets/img/logo-night.png'
-import dayLogo from '../assets/img/logo-day.png'
+import darkModeLogo from '../assets/img/logo-dark.png'
+import logo from '../assets/img/logo.png'
 import { NavLink } from 'react-router-dom'
 
 export function AppHeader() {
@@ -13,11 +13,11 @@ export function AppHeader() {
   useEffect(() => {
     if (isDark) {
       containerRef.current.classList.add('night')
-      logoRef.current.src = nightLogo
+      logoRef.current.src = darkModeLogo
     }
     else {
       containerRef.current.classList.remove('night')
-      logoRef.current.src = dayLogo
+      logoRef.current.src = logo
     }
   })
 
@@ -27,7 +27,7 @@ export function AppHeader() {
       className={`flex column justify-center align-center header-container`}
     >
       <section className="flex align-center header-logo">
-          <img ref={logoRef} className='logo' src={nightLogo} alt=""/>
+          <img ref={logoRef} className='logo' src={darkModeLogo} alt=""/>
       </section>
       <nav>
         <ul className="clean-list flex">

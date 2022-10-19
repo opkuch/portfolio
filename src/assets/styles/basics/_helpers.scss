@@ -41,16 +41,23 @@
     }
 }
 .simple-button {
-    background: transparent;
-    color: black;
+    background: rgb(36, 36, 36);
+    color: whitesmoke;
     font-size: inherit;
     font-family: inherit;
+    text-transform: capitalize; 
     border: 0;
-    opacity: 0.6;
+    // opacity: 0.6;
     transition: 0.3s all;
     padding: 0;
+    border-radius: 3px;
+    padding: 1rem;
     cursor: pointer;
-
+    &:hover {
+        background: rgb(238, 238, 238);
+        outline: 1px solid rgb(0, 0, 0);
+        color: rgb(18, 16, 16);
+    }
     &:disabled {
         cursor: initial;
         opacity: 0.2;
@@ -135,8 +142,7 @@
     display: inline-block;
     background: linear-gradient(to top, #ad10f6, #8610f5);
     opacity: 0;
-    transform: translateX(-50px);
-    transition: all .5s ease-in-out;
+    transition: all .25s ease-in-out;
 }
 
 .page-headline {
