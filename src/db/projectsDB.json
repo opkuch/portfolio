@@ -2,10 +2,10 @@
 [
     {
         "id": "p100",
-        "name": "donatello - Trello inspired clone",
-        "description": "Donatello is the flexible work management tool where teams can ideate plans and collaborate on projects. Developed with Vue.js, Vuex, SASS, mongoDB, Express and Socket.io. ",
+        "name": "donatello",
+        "description": "Trello clone project. Developed using Vue.js, Vuex, SASS, mongoDB, Express and Socket.io. ",
         "skills": ["s117", "s115", "s110", "s112"],
-        "thumbnail": "https://i.postimg.cc/jSrjY4Cc/donatello-thumb.png",
+        "thumbnail": "https://img.onl/jaGK2j",
         "demoUrl": "https://donate11o-app.herokuapp.com/#/",
         "repoUrl": "https://github.com/opkuch/donatello"
 
@@ -15,7 +15,7 @@
         "name": "wazzup",
         "description": "Room-based chat app in Whatsapp-Web style. Developed using MERN stack, and pusher service as websockets.",
         "skills": ["s100",  "s110", "s112", "s115"],
-        "thumbnail": "https://i.postimg.cc/GpfCM4Cg/wazzup-thumbnail.png",
+        "thumbnail": "https://img.onl/zVwGTu",
         "demoUrl": "https://wazzuprooms.onrender.com/#/",
         "repoUrl": "https://github.com/opkuch/wazzup"
 
@@ -38,15 +38,6 @@
         "thumbnail": "https://gcdnb.pbrd.co/images/iCsANHuhgaZ7.png?o=1",
         "demoUrl": "https://opkuch.github.io/meme-generator/",
         "repoUrl": "https://github.com/opkuch/meme-generator"
-    },
-    {
-        "id": "p101",
-        "name": "missbooks",
-        "description": "Virtual library, finding books and get inspired by famous quotes. Developed using Angular, RxJS and SASS. Running on serverless backend using firebase tools for authentication and storing data.",
-        "skills": ["s101", "s115", "s108", "s105"],
-        "thumbnail": "https://gcdnb.pbrd.co/images/Ulv43WloRX5t.png?o=1",
-        "demoUrl": "https://opkuch.github.io/missBooks-ghPage/#/home",
-        "repoUrl": "https://github.com/opkuch/missBook-Angular"
-
     }
+
 ]

@@ -1,15 +1,18 @@
 import React from 'react'
 
 export const Button = ({
-  color = '#202A44',
-  text = 'Button',
+  text = '',
   type = 'default',
   disableShadow = false,
   startIcon = '',
   endIcon = '',
   disableButton = false,
   clickFunc,
-  size = 'lg'
+  size = '',
+  iconSrc = null,
+  round = false,
+  isActive = false,
+  isHover = true
 }) => {
     const handleClick = (e) => {
         if (clickFunc) return clickFunc(e)
@@ -17,17 +20,14 @@ export const Button = ({
     }
   return (
     <button
-      className={`btn ${type} ${size} ${disableShadow ? '' : 'shadow'}`}
+      className={`btn ${type} ${size} ${disableShadow ? '' : 'shadow'} ${iconSrc? 'icon-button' : ''} ${round? 'round' : ''} ${isActive? 'active' : ''} ${isHover? 'hover' : ''}`}
       disabled={disableButton}
-      onClick={handleClick}
-      style={{
-        color: color,
-        outline: type === 'outline' ? `1px solid ${color}` : 'none',
-      }}
+      onClick={() => handleClick()}
     >
-      <span className="material-icons">{startIcon}</span>
-      <span className="btn-txt">{text}</span>
-      <span className="material-icons">{endIcon}</span>
+        {iconSrc? <img className='icon-img' src={iconSrc} alt=''/> : ''}
+      {startIcon? <span className="material-icons">{startIcon}</span> : ''}
+      {text? <span className="btn-txt">{text}</span> : ''}
+      {endIcon? <span className="material-icons">{endIcon}</span> : ''}
     </button>
   )
 }

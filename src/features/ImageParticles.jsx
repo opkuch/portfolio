@@ -4,35 +4,34 @@ export default function ImageParticles() {
   const canvasRef = useRef()
   const imageRef = useRef()
   let canvas
-  let ctx
   let image
+  let ctx
   let animationId
   useEffect(() => {
     canvas = canvasRef.current
     image = imageRef.current
     image.onload = function(){
-        if (!canvas) return
-        ctx = canvas.getContext('2d')
-        if (!ctx || !image) return
-        canvas.width = image.offsetHeight - 300
-        canvas.height = image.offsetWidth - 300
-        const effect = new Effect(canvas.width, canvas.height)
-        effect.init(ctx)
-        const animate = () => {
-          ctx.clearRect(0, 0, canvas.width, canvas.height)
-          effect.draw(ctx)
-          effect.update()
-          animationId = requestAnimationFrame(animate)
-        }
-        animate()
+      if (!canvas) return
+      ctx = canvas.getContext('2d')
+      if (!ctx || !image) return
+      canvas.width = image.offsetHeight - 350
+      canvas.height = image.offsetWidth - 350
+      const effect = new Effect(canvas.width, canvas.height)
+      effect.init(ctx)
+      const animate = () => {
+        ctx.clearRect(0, 0, canvas.width, canvas.height)
+        effect.draw(ctx)
+        effect.update()
+        animationId = requestAnimationFrame(animate)
+      }
+      animate()
     }
     return () => {
-        cancelAnimationFrame(animationId)
-        window.removeEventListener('mousemove', event => {
-        })
+      cancelAnimationFrame(animationId)
+      window.removeEventListener('mousemove', event => {
+      })
     }
   }, [])
-
 
   class Particle {
     constructor(effect, x, y, color) {
@@ -51,7 +50,7 @@ export default function ImageParticles() {
       this.force = 0
       this.distance = 0
       this.angle = 0
-      this.friction = 0.8
+      this.friction = 0.9
     }
 
     draw(context) {
@@ -95,6 +94,10 @@ export default function ImageParticles() {
       canvas.addEventListener('mousemove', (event) => {
         this.mouse.x = event.offsetX
         this.mouse.y = event.offsetY
+      })
+      canvas.addEventListener('mouseout', (event) => {
+        this.mouse.x = 0
+        this.mouse.y = 0
       })
     }
     init(context) {

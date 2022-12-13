@@ -1,6 +1,6 @@
 export function toggleDarkMode(isDark) {
     return async (dispatch) => {
-        dispatch({ type: 'TOGGLE_DARKMODE', isDark})
+        await dispatch({ type: 'TOGGLE_DARKMODE', isDark})
     }
 }
 

@@ -4,17 +4,21 @@ export default function DarkModeSwitch() {
   const dispatch = useDispatch()
   const isDark = useSelector((state) => state.featureModule.isDark)
 
+  const switchMode = async () => {
+    const isDone = dispatch({ type: 'TOGGLE_DARKMODE', isDark: !isDark })
+    localStorage.setItem('isDark', isDone.isDark)
+  }
+
   return (
     <div className="switch-wrapper">
       <input
         type="checkbox"
         className="checkbox"
         id="checkbox"
-        onChange={() => dispatch({ type: 'TOGGLE_DARKMODE', isDark: !isDark })}
+        onChange={() => switchMode()}
+        checked={!isDark? true : false}
       />
       <label htmlFor="checkbox" className="label">
-        <i className="fas fa-moon"></i>
-        <i className="fas fa-sun"></i>
         <div className="ball"> </div>
       </label>
     </div>

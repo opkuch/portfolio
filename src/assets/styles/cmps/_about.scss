@@ -1,9 +1,9 @@
 .about-container {
   padding-inline: 10rem;
-  padding-block-start: 2rem;
+  margin-block-start: 2rem;
   min-height: 80vh;
 
-  &.night {
+  &.dark {
     color: rgb(238, 237, 237);
 
     .big-header {
@@ -25,12 +25,6 @@
     }
     }
 
-    .arrow-wrapper {
-      .arrow-img {
-        filter: invert(100%) sepia(5%) saturate(7449%) hue-rotate(120deg) brightness(113%) contrast(121%);
-
-      }
-    }
   }
 
   .about-header {
@@ -39,7 +33,8 @@
   }
 
   @media( max-width: 1100px) {
-    padding: 2rem;
+    padding-inline: 2rem;
+    margin-block-start: 0.5rem;
   }
   .about-body {
     display: flex;
@@ -52,6 +47,8 @@
     // padding: 1rem;
     @media (max-width: 800px) {
       font-size: 1.1rem;
+      position: relative;
+      bottom: 2rem;
     }
 
     .about-info {
@@ -78,13 +75,12 @@
   }
 
   .contact {
-    margin-block-start: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
     font-size: 1.5rem;
-
+    margin-block: 2rem;
     div {
       gap: 20px;
     }
@@ -105,26 +101,7 @@
       // width: 150px;
   }
   }
-  .arrow-wrapper {
-    position: absolute;
-    z-index: -1;
-    max-width: 250px;
-    .arrow-img, span {
-      position: relative;
-      top: 50px;
-      left: 500px;
-      opacity: 0.75;
-    }
-    
-    span {
-      font-family: 'Sue Ellen Francisco';
-      font-size: 3rem;
-      left: 550px;
-    }
-   @media(max-width: 1000px) {
-    display: none;
-   } 
-  }
+
 }
 
 .contact-ways {

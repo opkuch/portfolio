@@ -1,5 +1,5 @@
 const INITIAL_STATE = {
-    isDark: true,
+    isDark: JSON.parse(localStorage.getItem('isDark')) || true,
     isLoading: true
 }
 

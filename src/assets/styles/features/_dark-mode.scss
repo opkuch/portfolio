@@ -15,10 +15,8 @@
     position: absolute;
     transform: scale(1.5);
     right: 20px;
-    top: 75px;
-    &.night {
-      background-color:#111;
-    }
+    top: 40px;
+
   }
   
   .ball {
@@ -35,11 +33,11 @@
   /*  target the elemenent after the label*/
   .checkbox:checked + .label .ball{
     transform: translateX(20px);
-    background-color: whitesmoke;
+    background-color: #111;
 
   }
 
   .checkbox:checked + .label {
-    background-color: #111;
+    background-color:#f1f1f1;
   }
   

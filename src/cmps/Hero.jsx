@@ -1,71 +1,53 @@
 import React, { useEffect, useRef } from 'react'
+import { useState } from 'react'
 import { useSelector } from 'react-redux'
-// import { appService } from '../services/appService'
-import Typewriter from 'typewriter-effect'
-import { AppParticles } from '../features/AppParticles'
-import {Blob} from '../features/Blob'
+import blobImg from '../assets/img/blob.svg'
+import arrowImg from '../assets/img/arrow.svg'
+import ImageParticles from '../features/ImageParticles'
+import scrollDownArrowsImg from '../assets/img/scroll-down.svg'
+import { Link } from 'react-scroll'
 export function Hero() {
   const isDark = useSelector((state) => state.featureModule.isDark)
   const containerRef = useRef()
-  // const reactSkill = appService.getSkillById('s100')
-  // const reduxSkill = appService.getSkillById('s114')
-  // const vueSkill = appService.getSkillById('s117')
-  // const nodeSkill = appService.getSkillById('s112')
-  // const expressSkill = appService.getSkillById('s103')
-  // const mongoSkill = appService.getSkillById('s110')
-  // const angularSkill = appService.getSkillById('s101')
-  // const firebaseSkill = appService.getSkillById('s105')
-
-  // const skills = [
-  //   reactSkill,
-  //   reduxSkill,
-  //   vueSkill,
-  //   nodeSkill,
-  //   expressSkill,
-  //   mongoSkill,
-  //   angularSkill,
-  //   firebaseSkill,
-  // ]
+  useEffect(() => {}, [])
   useEffect(() => {
     if (isDark) {
-      containerRef.current.classList.add('night')
+      containerRef.current.classList.add('dark')
     } else {
-      containerRef.current.classList.remove('night')
+      containerRef.current.classList.remove('dark')
     }
   }, [isDark])
 
   return (
-    <>
-      <div ref={containerRef} id="hero" className="container hero-container">
-        <section className="hero-title flex column align-center">
+    <div className="hero-wrapper" id="hero">
+      <div ref={containerRef} className="hero-layout hero-container">
+        <section className="hero-title flex column">
           <p className="small-txt">hi, my name is</p>
           <p className="purple">Nadav Ben Hur</p>
           <p>I am a web developer</p>
-          <Blob />
           <div className="hero-details">
-            {/* <Typewriter
-              onInit={(typewriter) => {
-                typewriter
-                  .typeString('My Passion')
-                  .pauseFor(300)
-                  .typeString(' is to build ')
-                  .pauseFor(300)
-                  .typeString('amazing')
-                  .pauseFor(300)
-                  .typeString(' UI/UX experiences')
-                  .start()
-              }}
-            />{' '} */}
-            <span>
-              My passion is to build amazing UI/UX experiences
-            </span>
+            <span>My passion is to build amazing UI/UX experiences</span>
             <a className="mail-link" href="mailto:nadavbenhur@gmail.com">
               <button className="nice-button">work with me</button>
             </a>
           </div>
         </section>
+        <img className="blob-bg" src={blobImg} alt="" />
       </div>
-      <AppParticles />
-    </>
+      <div>
+        <div className="arrow-wrapper">
+          <span>Hover over me!</span>
+          <img className="arrow-img" src={arrowImg} alt="" />
+        </div>
+        <ImageParticles />
+      </div>
+      <Link to='projects' className='arrows-link'>
+        <svg class="arrows">
+          <path class="a1" d="M0 0 L30 32 L60 0"></path>
+          <path class="a2" d="M0 20 L30 52 L60 20"></path>
+          <path class="a3" d="M0 40 L30 72 L60 40"></path>
+        </svg>
+      </Link>
+    </div>
   )
 }

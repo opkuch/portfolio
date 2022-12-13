@@ -180,7 +180,7 @@ export function AppParticles() {
   const darkOptions = {
     background: {
       color: {
-        value: '#1e1919e2',
+        value: '#1d1d1d',
       },
     },
     fullScreen: {

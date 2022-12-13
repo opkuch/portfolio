@@ -1,8 +1,12 @@
 import {useState} from 'react'
+import { useProgressiveImage } from '../custom-hooks/useProgressiveImage'
 import {Button} from './Button'
 import ProjectDetails from './ProjectDetails'
+import imgLoader from '../assets/img/image-loader.svg'
+
 export function ProjectPreview({ project }) {
   const [isDetails, setIsDetails] = useState(false)
+  const loaded = useProgressiveImage(project.thumbnail)
 
   const openDemo = () => {
     window.open(project.demoUrl, '_blank')
@@ -16,7 +20,7 @@ export function ProjectPreview({ project }) {
     setIsDetails(!isDetails)
   }
   return (
-    <div className="flex project-preview" style={{background: `url(${project.thumbnail})`, backgroundRepeat: 'no-repeat'}}>
+    <div className="flex project-preview" style={{background: `url(${loaded || imgLoader})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center'}}>
         <section className="project-actions">
           {isDetails? <ProjectDetails name={project.name} description={project.description} skills={project.skills} /> : ''}
           <div className='wrapper'>

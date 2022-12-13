@@ -16,13 +16,13 @@ export function About() {
   useEffect(() => {
     setTimeout(() => {
       dispatch({type: 'TOGGLE_LOADER', isLoading: false})
-    }, 3000)
+    }, 1000)
     return () => dispatch({type: 'TOGGLE_LOADER', isLoading: true})
   }, [dispatch])
 
   useEffect(() => {
-      if (isDark && containerRef.current) containerRef.current.classList.add('night')
-      else if (containerRef.current) containerRef.current.classList.remove('night')
+      if (isDark && containerRef.current) containerRef.current.classList.add('dark')
+      else if (containerRef.current) containerRef.current.classList.remove('dark')
   }, [isDark, isLoading])
 
 
@@ -30,18 +30,12 @@ export function About() {
   else return (
     <div ref={containerRef} id="about" className="about-container">
       <section className="about-body">
-        <div>
-          <div className='arrow-wrapper'>
-            <span>Hover over me!</span>
-            <img className='arrow-img' src={arrowImg} alt=""/>
-          </div>
-          <ImageParticles />
-        </div>
+
         <div className="about-info flex column">
           <span>
-            Passionate Fullstack Developer, fascinated by web technologies and everything involves code.
+            Passionate Fullstack Developer, fascinated by web technologies and everything that involves code.
           </span>
-          <span>Experinced in creating web applications using</span>
+          <span>Experienced in creating web applications using</span>
           
           <div className='flex skills-about'>
             {skills.map(skill => <SkillPreview key={skill.id} skillObj={skill}/>)}
