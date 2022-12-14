@@ -1,12 +1,10 @@
-import {useState} from 'react'
+import { useState } from 'react'
 import { useProgressiveImage } from '../custom-hooks/useProgressiveImage'
-import {Button} from './Button'
-import ProjectDetails from './ProjectDetails'
+import { Button } from './Button'
 import imgLoader from '../assets/img/image-loader.svg'
 
-export function ProjectPreview({ project }) {
+export function ProjectPreview({ project, idx }) {
   const [isDetails, setIsDetails] = useState(false)
-  const loaded = useProgressiveImage(project.thumbnail)
 
   const openDemo = () => {
     window.open(project.demoUrl, '_blank')
@@ -20,14 +18,21 @@ export function ProjectPreview({ project }) {
     setIsDetails(!isDetails)
   }
   return (
-    <div className="flex project-preview" style={{background: `url(${loaded || imgLoader})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center'}}>
-        <section className="project-actions">
-          {isDetails? <ProjectDetails name={project.name} description={project.description} skills={project.skills} /> : ''}
-          <div className='wrapper'>
-            <Button color='#f1f1f1' endIcon='preview' text='Demo' clickFunc={openDemo}/>
-            <Button color='#f1f1f1' text='Repository' endIcon='code' clickFunc={openRepo}/>
-            <Button color='#f1f1f1' text='Details' endIcon='info' clickFunc={openDetails}/>
-          </div>
+    <div className="flex column align-center project-preview">
+      <section>
+      <section className="project-details">
+      <div className="container-2" style={idx % 2 === 0? {borderRadius: '100px 20px 20px 20px'} : {borderRadius: '20px 20px 100px 20px'}}>
+        <p className="number">{idx + 1}</p>
+        <h2>{project.name}</h2>
+        <p className="text">
+          {project.description}
+        </p>
+      <section className="project-actions">
+        <Button endIcon="preview" round={true} clickFunc={openDemo} />
+        <Button endIcon="code" clickFunc={openRepo} round={true} />
+      </section>
+      </div>
+    </section>
       </section>
     </div>
   )

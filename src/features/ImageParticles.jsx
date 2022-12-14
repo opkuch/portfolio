@@ -1,6 +1,8 @@
+import { useState } from 'react'
 import { useEffect, useRef } from 'react'
 import { imageUrl } from '../assets/img/profilePicData'
 export default function ImageParticles() {
+  const [isLoading, setIsLoading] = useState(false)
   const canvasRef = useRef()
   const imageRef = useRef()
   let canvas
@@ -18,6 +20,7 @@ export default function ImageParticles() {
       canvas.height = image.offsetWidth - 350
       const effect = new Effect(canvas.width, canvas.height)
       effect.init(ctx)
+      setIsLoading(false)
       const animate = () => {
         ctx.clearRect(0, 0, canvas.width, canvas.height)
         effect.draw(ctx)
@@ -127,7 +130,8 @@ export default function ImageParticles() {
       this.particleArray.forEach((particle) => particle.update())
     }
   }
-  return (
+  if (isLoading) return <div>Loading..</div>
+  else return (
     <div>
       <canvas className="my-canvas" ref={canvasRef}></canvas>
       <img className="canvas-image" ref={imageRef} src={imageUrl} alt="" />

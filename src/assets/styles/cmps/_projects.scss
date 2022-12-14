@@ -1,62 +1,46 @@
-
 .projects-container {
-    min-height: 100vh;
-    color: rgba(33, 28, 28, 0.85);
-    padding-inline: 10rem;
+  min-height: 100vh;
+  color: #f5f5f5;
+  margin-block-start: 2rem;
+  @media (max-width: 1100px) {
+    padding: 2rem;
+    margin-block-start: 0.5rem;
+  }
+
+  @media (max-width: 600px) {
+    padding: 0.7rem;
     margin-block-start: 1rem;
-    @media(max-width: 1100px) {
-        padding: 2rem;
-        margin-block-start: 0.5rem;
+  }
+
+  .project-skills {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+
+    .skill-list {
+      gap: 5px;
+    }
+  }
+
+  .projects-body {
+    border-radius: 25px;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 500px));
+    place-content: center;
+    gap: 50px;
+    @media (max-width: 1100px) {
+      border: none;
+      outline: none;
+      background-color: transparent;
     }
 
-    @media(max-width: 600px) {
-        padding: 0.7rem;
-        margin-block-start: 1rem;
+    @media (max-width: 970px) {
+      grid-template-columns: minmax(300px, 500px);
     }
-
-    &.dark {
-        .big-header { 
-            color: rgb(238, 237, 237);
-        }
-        color: #dadee4;
-        .projects-body {
-            background-color: transparent;
-
-        }
-    }
-
-    // .projects-header {
-    //     margin-block-end: 4rem;
-    // }
-
-    .project-skills {
-        padding: 1rem;
-        display: flex;
-        align-items: center;
-
-        .skill-list {
-            gap: 5px;
-        }
-    }
-
-    .projects-body {
-        display: flex;
-        flex-direction: column;
-        border-radius: 25px;
-        padding: 2rem;
-        gap: 20px;
-        @media(max-width: 1100px) {
-            border: none;
-            outline: none;
-            background-color: transparent;
-        }
-
-        @media(max-width: 600px) {
-            padding: 0;
-        }
-    }
-    .hide {
-        opacity: 0;
-        transition: opacity .6 ease;
-      }
+  }
+  .hide {
+    opacity: 0;
+    transition: opacity 0.6 ease;
+  }
 }

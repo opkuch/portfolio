@@ -1,38 +1,51 @@
 .about-container {
-  padding-inline: 10rem;
-  margin-block-start: 2rem;
-  min-height: 80vh;
+  // padding-inline: 10rem;
+  min-height: 100vh;
+  color: rgb(238, 237, 237);
 
-  &.dark {
+  .bg-wrapper {
+    position: absolute;
+    top: 0;
+  }
+  .blob-bg {
+    min-height: 750px;
+    min-width: 550px;
+    position: relative;
+    top: 350px;
+    left: 50%;
+    transform: translate(-65%, -50%);
+
+
+    z-index: -1;
+    color: #f5f5f5;
+
+  }
+
+  .big-header {
     color: rgb(238, 237, 237);
+  }
 
-    .big-header {
-        color: rgb(238, 237, 237);
+  .github-icon {
+    filter: invert(99%) sepia(93%) saturate(2%) hue-rotate(106deg)
+      brightness(113%) contrast(101%);
+  }
+  .skills-about {
+    .skill-preview {
+      padding: 0.2rem;
+      outline: 3px solid rgba(178, 170, 185, 0.573);
+      border-radius: 5px;
+      border: 1.5px solid rgb(217, 217, 217);
+      background-color: rgba(237, 237, 237, 0.69);
+      display: flex;
+      align-items: center;
     }
-
-    .github-icon {
-      filter: invert(99%) sepia(93%) saturate(2%) hue-rotate(106deg) brightness(113%) contrast(101%);
-    }
-    .skills-about {
-      .skill-preview {
-        padding: 0.2rem;
-        outline: 3px solid rgba(178, 170, 185, 0.573);
-        border-radius: 5px;
-        border: 1.5px solid rgb(217, 217, 217);
-        background-color: rgba(237, 237, 237, 0.69);
-        display: flex;
-        align-items: center;
-    }
-    }
-
   }
 
   .about-header {
     margin-block-end: 2rem;
-    
   }
 
-  @media( max-width: 1100px) {
+  @media (max-width: 1100px) {
     padding-inline: 2rem;
     margin-block-start: 0.5rem;
   }
@@ -85,7 +98,6 @@
       gap: 20px;
     }
     // background: linear-gradient(to left, rgba(92, 0, 122, 0.5), rgba(151, 0, 201, 0.7));
-
   }
   .skills-about {
     margin-top: 1rem;
@@ -99,9 +111,8 @@
       border: 1.5px solid rgb(217, 217, 217);
       background-color: rgba(175, 175, 175, 0.833);
       // width: 150px;
+    }
   }
-  }
-
 }
 
 .contact-ways {
@@ -112,5 +123,4 @@
   .gmail-img {
     margin-top: 5px;
   }
-
 }

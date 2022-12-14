@@ -8,12 +8,14 @@
     width: 420px;
   }
 
-  @media(max-width:740px) {
+  @media(max-width:900px) {
     flex-direction: column;
+  }
+
+  @media(max-width: 740px) {
     .canvas-image {
       max-width: 320px;
       position: relative;
-      left: 100px;
       top: 55px;
     }
   }
@@ -44,16 +46,17 @@
   }
 
   .blob-bg {
-    height: 750px;
-    min-height: 650px;
+    min-height: 750px;
     min-width: 550px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-65%, -50%);
-    filter: invert(95%) sepia(92%) saturate(15%) hue-rotate(243deg)
-      brightness(104%) contrast(107%);
+    filter: invert(50%) sepia(200%) saturate(250%) hue-rotate(298deg) brightness(50%) contrast(100%);
+
+
     z-index: -1;
+    color: #f5f5f5;
 
   }
   .hero-title {
@@ -63,7 +66,7 @@
     font-size: 5rem;
     // text-align: center;
     // line-height: 90px;
-    color: rgb(0, 97, 130);
+    color: #f5f5f5;
     p.purple {
       position: relative;
       bottom: 10px;
@@ -89,7 +92,7 @@
     // margin-block-start: 1.5rem;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 
     .mail-link {
       width: fit-content;
@@ -113,44 +116,49 @@
 
 }
 
-.arrow-wrapper {
-  position: absolute;
-  z-index: -1;
-  max-width: 250px;
-  filter: invert(100%) sepia(5%) saturate(7449%) hue-rotate(120deg) brightness(113%) contrast(121%);
-  transform: translate(-50%, 20%);
-  .arrow-img, span {
-    position: relative;
-    bottom: 250px;
-    left: 500px;
-    opacity: 0.75;
-  }
+// .arrow-wrapper {
+//   position: absolute;
+//   z-index: -1;
+//   max-width: 250px;
+//   filter: invert(100%) sepia(5%) saturate(7449%) hue-rotate(120deg) brightness(113%) contrast(121%);
+//   // transform: translate(-50%, 20%);
+//   right: 350px;
+//   .arrow-img {
+//     position: relative;
+//     opacity: 0.75;
+//     transform: rotate(180deg);
+//     bottom: 400px;
+//   }
+//   span {
+//     position: relative;
+//     bottom: 200px;
+//   }
   
-  span {
-    font-family: 'Sue Ellen Francisco';
-    font-size: 3rem;
-    left: 550px;
-  }
-  @media(max-width: 1550px) {
-    max-width: 200px;
-    bottom: 100px;
-    transform: translateX(-110px);
-  }
- @media(max-width: 1000px) {
-  display: none;
- } 
-}
+//   span {
+//     font-family: 'Sue Ellen Francisco';
+//     font-size: 3rem;
+//     left: 550px;
+//   }
+//   @media(max-width: 1550px) {
+//     max-width: 200px;
+//     bottom: 100px;
+//     transform: translateX(-110px);
+//   }
+//  @media(max-width: 1000px) {
+//   display: none;
+//  } 
+// }
 
 .arrows {
 	width: 60px;
 	height: 72px;
-	position: absolute;
+	position: relative;
 	left: 50%;
 	margin-left: -30px;
 }
 
 .arrows path {
-	stroke: #2994D1;
+	stroke: #661528;
 	fill: transparent;
 	stroke-width: 1px;	
 	animation: arrow 2s infinite;

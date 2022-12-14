@@ -13,9 +13,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   max-height: 100vh;
-  &.night {
-    background-color: #061018;
-  }
+  background-color: #040a0f;
   
 }
 
@@ -24,10 +22,6 @@ body {
 }
 .app-container {
   min-height: 100vh;
-}
-
-img {
-  max-width: 100%;
 }
 
 h1,

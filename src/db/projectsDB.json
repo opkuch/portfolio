@@ -6,7 +6,7 @@
         "description": "Trello clone project. Developed using Vue.js, Vuex, SASS, mongoDB, Express and Socket.io. ",
         "skills": ["s117", "s115", "s110", "s112"],
         "thumbnail": "https://img.onl/jaGK2j",
-        "demoUrl": "https://donate11o-app.herokuapp.com/#/",
+        "demoUrl": "https://donatello.onrender.com/",
         "repoUrl": "https://github.com/opkuch/donatello"
 
     },

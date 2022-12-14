@@ -3,14 +3,14 @@
   position: fixed;
   z-index: 100;
   height: 100%;
-  width: 150px;
-  backdrop-filter:blur(200px);
-  background-color: rgba(240, 248, 255, 0.119);
+  width: 50px;
   transform: translateX(-95%);
-  transition: transform ease .2s;
+  transition: transform 0.1s;
+  backdrop-filter: blur(3px);
+  background-color: rgba(0, 0, 0, 0.052);
   &.show-nav {
     transform: translateX(0);
-    background:linear-gradient( to bottom, rgb(0, 40, 53), rgb(0, 97, 130));
+    // background:linear-gradient( to bottom, #661528, #490112);
 
     button {
       transform: rotate(0);
@@ -18,8 +18,8 @@
   }
   button {
     position: relative;
-    left: 80px;
-    top: 20%;
+    left: 45px;
+    top: 10%;
     transform: rotate(180deg);
   }
   nav {
@@ -27,7 +27,7 @@
     align-items: center;
     font-family: 'Lato', sans-serif;
     user-select: none;
-    flex-basis: 50%;
+    width: 100%;
     ul {
       gap: 15px;
       flex-direction: column;
@@ -39,28 +39,39 @@
       position: relative;
       padding-block-end: 3px;
       font-size: 1.2rem;
-      filter: invert(100%);
+      &.active {
+        filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(207deg) brightness(102%) contrast(102%);
+
+      }
       @media (max-width: 600px) {
         padding-block-end: 0;
         margin-block-end: 1rem;
       }
-      &:hover {
-        filter: invert(70%);
+
+      .nav-icon {
+        height: 25px;
+        width: 25px;
+        filter: invert(20%) sepia(50%) saturate(50%) hue-rotate(302deg)
+          brightness(10%) contrast(9%);
+
+        &:hover {
+          filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(207deg) brightness(102%) contrast(102%);
+
+        }
       }
     }
 
     li {
       gap: 1.5px;
-
+      // background: linear-gradient(to bottom, #661528, #490112);
+      width: 100%;
 
       &:not(.active):hover .dot {
-        transition: all .25s ease-in-out;
+        transition: all 0.25s ease-in-out;
         transform: translateX(0);
         opacity: 1;
         position: relative;
       }
     }
   }
-
 }
-

@@ -22,15 +22,6 @@
 // reusable cmps
 @import 'reusable/button';
 
-#tsparticles {
-  .example {
-    position: absolute;
-    top: 0;
-    // max-height: 100vh;
-    z-index: -1;
-  }
-}
-
 .big-header {
   font-size: 72px;
   font-family: 'Staatliches', sans-serif;
@@ -59,6 +50,6 @@
   min-width: 350px;
   @media(max-width: 740px) {
     opacity: 1;
-    position: unset;
+    // position: unset;
   }
 }
