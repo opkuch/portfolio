@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.3fffe7a2.css",
+    "main.css": "/portfolio/static/css/main.d2338c99.css",
     "main.js": "/portfolio/static/js/main.b54b129e.js",
     "static/media/material-icons-two-tone.woff": "/portfolio/static/media/material-icons-two-tone.3baa5b8f3469222b822d.woff",
     "static/media/material-icons-two-tone.woff2": "/portfolio/static/media/material-icons-two-tone.4ef4218c522f1eb6b5b1.woff2",
@@ -18,11 +18,11 @@
     "static/media/image-loader.svg": "/portfolio/static/media/image-loader.a761760630c869d34a67aefc72e54893.svg",
     "static/media/briefcase.svg": "/portfolio/static/media/briefcase.4f25f7e8de3670c118cc87ae64edcd3e.svg",
     "static/media/information.svg": "/portfolio/static/media/information.bf8f7e052ca7997aaa829f08f3b7df99.svg",
-    "main.3fffe7a2.css.map": "/portfolio/static/css/main.3fffe7a2.css.map",
+    "main.d2338c99.css.map": "/portfolio/static/css/main.d2338c99.css.map",
     "main.b54b129e.js.map": "/portfolio/static/js/main.b54b129e.js.map"
   },
   "entrypoints": [
-    "static/css/main.3fffe7a2.css",
+    "static/css/main.d2338c99.css",
     "static/js/main.b54b129e.js"
   ]
 }
