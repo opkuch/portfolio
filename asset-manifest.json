@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.263c2782.css",
-    "main.js": "/portfolio/static/js/main.e81ab576.js",
+    "main.css": "/portfolio/static/css/main.a1ef883b.css",
+    "main.js": "/portfolio/static/js/main.aab2c9b2.js",
     "static/media/material-icons-two-tone.woff": "/portfolio/static/media/material-icons-two-tone.3baa5b8f3469222b822d.woff",
     "static/media/material-icons-two-tone.woff2": "/portfolio/static/media/material-icons-two-tone.4ef4218c522f1eb6b5b1.woff2",
     "static/media/material-icons-round.woff": "/portfolio/static/media/material-icons-round.5d681e2edae8c60630db.woff",
@@ -20,11 +20,11 @@
     "static/media/briefcase.svg": "/portfolio/static/media/briefcase.4f25f7e8de3670c118cc87ae64edcd3e.svg",
     "static/media/information.svg": "/portfolio/static/media/information.bf8f7e052ca7997aaa829f08f3b7df99.svg",
     "static/media/menu.svg": "/portfolio/static/media/menu.cade3556e6c9b326d62302cf2b177af4.svg",
-    "main.263c2782.css.map": "/portfolio/static/css/main.263c2782.css.map",
-    "main.e81ab576.js.map": "/portfolio/static/js/main.e81ab576.js.map"
+    "main.a1ef883b.css.map": "/portfolio/static/css/main.a1ef883b.css.map",
+    "main.aab2c9b2.js.map": "/portfolio/static/js/main.aab2c9b2.js.map"
   },
   "entrypoints": [
-    "static/css/main.263c2782.css",
-    "static/js/main.e81ab576.js"
+    "static/css/main.a1ef883b.css",
+    "static/js/main.aab2c9b2.js"
   ]
 }
