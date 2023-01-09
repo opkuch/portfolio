@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.088895d9.css",
-    "main.js": "/portfolio/static/js/main.7bc30a01.js",
+    "main.css": "/portfolio/static/css/main.89f20eee.css",
+    "main.js": "/portfolio/static/js/main.a7b46b48.js",
     "static/media/material-icons-two-tone.woff": "/portfolio/static/media/material-icons-two-tone.3baa5b8f3469222b822d.woff",
     "static/media/material-icons-two-tone.woff2": "/portfolio/static/media/material-icons-two-tone.4ef4218c522f1eb6b5b1.woff2",
     "static/media/material-icons-round.woff": "/portfolio/static/media/material-icons-round.5d681e2edae8c60630db.woff",
@@ -15,16 +15,16 @@
     "static/media/ink_spatter.svg": "/portfolio/static/media/ink_spatter.dbad5e02487b8139391ad4aea83cf3fe.svg",
     "static/media/programmer.png": "/portfolio/static/media/programmer.6a080864ae97edccba8e.png",
     "static/media/open-uni.png": "/portfolio/static/media/open-uni.6408a660ff6f8e29c679.png",
-    "static/media/coding-academy.png": "/portfolio/static/media/coding-academy.1118d8a4e36c33286d07.png",
+    "static/media/coding-academy.png": "/portfolio/static/media/coding-academy.78c4405d07d2c23d6a86.png",
     "static/media/skills.svg": "/portfolio/static/media/skills.62c573bcdbbba6adbccd461c73aa77fc.svg",
     "index.html": "/portfolio/index.html",
     "static/media/briefcase.svg": "/portfolio/static/media/briefcase.4f25f7e8de3670c118cc87ae64edcd3e.svg",
     "static/media/information.svg": "/portfolio/static/media/information.bf8f7e052ca7997aaa829f08f3b7df99.svg",
-    "main.088895d9.css.map": "/portfolio/static/css/main.088895d9.css.map",
-    "main.7bc30a01.js.map": "/portfolio/static/js/main.7bc30a01.js.map"
+    "main.89f20eee.css.map": "/portfolio/static/css/main.89f20eee.css.map",
+    "main.a7b46b48.js.map": "/portfolio/static/js/main.a7b46b48.js.map"
   },
   "entrypoints": [
-    "static/css/main.088895d9.css",
-    "static/js/main.7bc30a01.js"
+    "static/css/main.89f20eee.css",
+    "static/js/main.a7b46b48.js"
   ]
 }
